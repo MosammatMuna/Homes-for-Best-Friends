@@ -1,0 +1,53 @@
+.about {
+    padding: 55px;
+}
+.about h2  {
+    text-align: center;
+    padding: 40px;
+}
+.about p {
+    text-align: center;
+    padding: 50px;
+}
+.about img {
+    margin: 25px;
+    width: 225px;
+    height: 200px;
+}
+.img
+{
+height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+#events iframe{
+    width:500px;
+    height:400px;
+}
+
+.meetOurTeam {
+    padding: 10px 50px 10px 50px;
+}
+.meetOurTeam p, h1 {
+    text-align: center;
+}
+.meetOurTeam i {
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #f4511e;
+    color: white;
+    
+}
+.meetOurTeam i:hover {
+  height: 60px;
+  width: 60px;
+  padding: 15px;
+  background-color: black;
+}
