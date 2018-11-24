@@ -24,130 +24,222 @@
         <!--Amimate.CSS-->
         <link rel="stylesheet" type = "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.img { 
-    /* The image used */
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDRlR-mTVIJVuxd7NQkb-eK-gejyKOXZ-9u01K0VjxUhOyWavh");
+        <!--Google Fonts Montserrat-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+        
+        <!--Google Fonts Oswald-->
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        
+        <!--Google Fonts Open Sans Condensed-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-</style>
 
 
     </head>
      
-    <body>
+    <body height="100%" width="100%">
     
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-            <a class="navbar-brand" href="#companyName">Home For Best Friends</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="adopt.html">Adopt</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Our Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#statistics">Statistics</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#getInvolved">Get Involved</a>
-                        </li
-                        <li class="nav-item">
-                            <a class="nav-link" href="#footer">More Information</a>
-                        </li>
-                    </ul>
+            <div class="dropdown">
+                <a class="navbar-brand" href="#">Home For Best Friends</a>
+                <i class="fas fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a style="color: black; text-align: left" href="#meetOurTeam">Our Team</a>
+                    <a style="color: black: text-align: left" href="#partners">Our Partners</a>
                 </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Nav">
+                <ul class="navbar-nav ml-auto">
+                    <li>
+                        <a class="nav-link" href="adopt.html">Adopt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#statistics">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#getInvolved">Get Involved</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">More Information</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <!--End Navbar-->
         
+        <!--Slideshow-->
+        <div class="slideshow" id="slideshow" width="100%" height="100%">
+            <center>
+                <div class="aboutImages">
+                    <img src="https://images.ecosia.org/wSTGCMV3ueCw7sWE9bs7f28JVgY=/0x390/smart/http%3A%2F%2Fimage.nj.com%2Fhome%2Fnjo-media%2Fwidth620%2Fimg%2Fledgerupdates_impact%2Fphoto%2F2016%2F02%2F25%2Fanimal-shelter-dog-04525f51b4c4c7dd.png" style="width: 300px">
+                </div>
+                <div class="aboutImages">
+                    <img src="https://topdogtips.com/wp-content/uploads/2017/09/Best-Animal-Shelters-2.jpg" width="50%">
+                </div>
+                <div class="aboutImages">
+                    <img src="http://www.pawsapplause.com/wp-content/uploads/2014/03/shelter-dog-2.jpg" width="50%">
+                </div>
+                <div class="aboutImages">
+                    <img src="http://www.stingythriftybroke.com/wp-content/uploads/2015/10/noone.jpg" width="50%">
+                </div>
+            </center>
+        </div>
         <!--About Us-->
-        <div class="aboutUs" id="aboutUs">
+        <div class="aboutUs" id="aboutUs" width="100%">
             <!--About-->
             <div class="about" id="about">
-                <div class="row slideanim">
-                    <div class="col-md-6">
+                <div class="row" >
+                    <div class="col-md-12 col-lg-12 wow slideInUp">
                         <div>
-                            <h2>About Us</h2>
+                            <h2>ABOUT US</h2>
+                            <center><i class="fas fa-info-circle"></i></center>
                         </div>
                         <div>
-                        <p><bold>We are dedicated to helping vulnerable animals and making sure they are kept in safe, loving homes.</bold></p>
+                        <p><bold>These pets that you viewed above were in desperate need of afffectoin and care. Luckily, they were brought into our HomeForBestFriends shelter. We, the team at HomeForBestFriends, are dedicated to helping vulnerable animals and making sure they are kept in safe, loving homes.</bold></p>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="http://www.pawsapplause.com/wp-content/uploads/2014/03/shelter-dog-2.jpg">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="http://www.stingythriftybroke.com/wp-content/uploads/2015/10/noone.jpg">
                     </div>
                 </div>
             </div>
+            
             <!--Meet our Team-->
-            <div class="meetOurTeam" id="meetOurTeam">
-                <h1>Meet Our Team</h1>
-                <p style="padding: 10px">Meet the people that made HomesForBestFriends such an amazing dog shelter!</p>
-                <div class="row slideanim" style="padding: 20px">
-                    <div class="col-sm-3">
-                        <img src="https://images.ecosia.org/ysEyaXMTN48pVe_nf0vo0jSykbI=/0x390/smart/http%3A%2F%2Fwww.carmelstudiosphotography.com%2Fwp-content%2Fgallery%2Fprofessional-headshots%2FProfessional-Headshot-9.jpg" width="280px" height="280px">
-                        <h4>Alina Johnson - Founder</h4>
-                        <p>Alina always had a passion for dogs. After finding a wounded dog in the street while walking home one day, Alina vowed to always give dogs a safe and welcoming home. She opened up the Home For Best Friends Dog Shelter in 2010.</p>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <i class="fab fa-twitter"></i>
+            <div class="meetOurTeam" id="meetOurTeam" width="100%">
+                <h2>MEET OUR TEAM</h2>
+                <h5 style="padding: 10px">Meet the people that made Home For Best Friends such an amazing dog shelter!</h5>
+                <div class="row" style="padding: 20px">
+                    <div class="col-lg-3 wow flipInY" data-wow-delay="0.5s">
+                        <img src="https://images.ecosia.org/ysEyaXMTN48pVe_nf0vo0jSykbI=/0x390/smart/http%3A%2F%2Fwww.carmelstudiosphotography.com%2Fwp-content%2Fgallery%2Fprofessional-headshots%2FProfessional-Headshot-9.jpg" width="300px" height="280px">
+                        <h4>ALINA JOHNSON - FOUNDER</h4>
+                        <p>Alina always had a passion for pets. After finding a wounded dog in the street while walking home one day, Alina vowed to give stray pets a safe and welcoming home. She opened up the Home For Best Friends Dog Shelter in 2010 with her best friend, Jasmine.</p>
+                        <center>
+                            <a><i class="fab fa-facebook-f"></i></a>
+                            <a><i class="fab fa-linkedin-in"></i></a>
+                            <a><i class="fab fa-twitter"></i></a>
+                        </center>
                     </div>
-                    <div class="col-sm-3">
-                        <img src="https://images.ecosia.org/oAsn-NtmyEKyhU6ZAHj4oEyFKWE=/0x390/smart/https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fportrait-smiling-business-woman-professional-worker-isolate-isolated-white-background-female-model-41759810.jpg" width="280px" height="280px">
-                        <h4>Jasmine McCarthy - Manager</h4>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <i class="fab fa-twitter"></i>
+                    <div class="col-lg-3 wow flipInY" data-wow-delay="1.0s">
+                        <img src="https://www.proheadshots.ca/wp-content/uploads/2016/03/white-background-headshots-woman.jpg" width="300px" height="280px">
+                        <h4>JASMINE CHEN - MANAGER</h4>
+                        <p>Jasmine, also a pet-lover, met Alina in high school. They always talked about opening up a pet shelter together. Jasmine also wanted to become a leader as an adult. She found her dream job when Alina invited her to work at the Home For Best Friends Dog shelter.</p>
+                        <center>
+                            <a><i class="fab fa-facebook-f"></i></a>
+                            <a><i class="fab fa-linkedin-in"></i></a>
+                            <a><i class="fab fa-twitter"></i></a>
+                        </center>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 wow flipInY" data-wow-delay="1.5s">
                         <img src="https://images.ecosia.org/U8yxsFVgLCfvGFhSeS-xtVZGW24=/0x390/smart/http%3A%2F%2Fwww.lukestudios.com%2Fwp-content%2Fuploads%2F2017%2F12%2FCorporate-Headshots-Minnesota-Minneapolis-790x1024.jpg" width="280px" height="280px">
-                        <h4>Julius Luster - Dog Groomer</h4>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <i class="fab fa-twitter"></i>
+                        <h4>JULIUS LUSTER - PET CARE TAKER</h4>
+                        <p>When Julius was a little boy, his family owned 10 pets. He always took care of each of them- he bathed them, fed them, and walked them. Seeing his love for animals, Alina swiftly made him an addition to the Home For Best Friend team in 2013. </p>
+                        <center>
+                            <a href="https://www.facebook.com/julius.luster.5"><i class="fab fa-facebook-f"></i></a>
+                            <a><i class="fab fa-linkedin-in"></i></a>
+                            <a><i class="fab fa-twitter"></i></a>
+                        </center>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 wow flipInY" data-wow-delay="2.0s">
                         <img src="https://images.ecosia.org/4mKQeB5WCvk7Wj6SNV9yjkn0Q0c=/0x390/smart/http%3A%2F%2Fwww.eikonphoto.com%2Fwp-content%2Fuploads%2F2017%2F03%2Fprofessional-headshots-men-e1515784407323.jpg" width="280px" height="280px">
-                        <h4>Alex Singh - Veterinarian</h4>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <i class="fab fa-twitter"></i>
+                        <h4>ALEX SINGH - VETERINARIAN</h4>
+                        <p>Ever since he was a little boy, Alex always knew that he wanted to be a doctor. Thus, he went to medical school, but later realized that his medical training and skills would be best applied to helping dogs. Thus, he joined the Home For Best Friends Team in 2015. </p>
+                         <center>
+                            <a><i class="fab fa-facebook-f"></i></a>
+                            <a><i class="fab fa-linkedin-in"></i></a>
+                            <a><i class="fab fa-twitter"></i></a>
+                        </center>
                     </div>
                 </div>
             </div>
             <!--End MeetOurTeam-->
-            
+            <hr>
             <!--Partners-->
-            <div class="partners" id="partners">
-                <h1>Our Partners</h1>
-                <p>These 4 companies have been with us since the very beginning. A big thank you geos to all of them!</p>
-            </div>
-            <div class="row">
-                <div class="col-md-3"
-            </div>
-        </div>
+            <div class="partners" id="partners" height="100%" width="100%">
+                <h2>OUR PARTNERS</h2>
+                <p style="text-align: center">These 4 companies have been with us since the very beginning. A big thank you goes to all of them!</p>
+                <div class="row">
+                    <div class="col-lg-6 wow zoomInLeft" data-wow-delay="0.2s">
+                        <center>
+                            <div class="panel panel-default text-center">
+                                <div class="panel-head">
+                                    <h4>THE HONEST KITCHEN</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <img src="https://images.ecosia.org/6XihvqferE8Hxa3qeKKNq-NjbjM=/0x390/smart/http%3A%2F%2Fwww.raininghotcoupons.com%2Fwp-content%2Fuploads%2F2013%2F05%2Fhonestkitch.jpg" height="190px">
+                                    <center><p style="color: #333333; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Thank you very much, The Honest Kitchen, for providing us with human-grade pet food that's delicious and nutritous for our pets!</p></center>
+                                </div>
+                                <div class="panel-footer">
+                                    <center><a href="https://www.thehonestkitchen.com/?msclkid=d69b3c02565016664d2067f6f8980d61&utm_source=bing&utm_medium=cpc&utm_campaign=CPCS%20-%20Trademark%20-%20Desktop%2FTablet&utm_term=the%20honest%20kitchen&utm_content=THK"><button class="btn btn-outline-primary" aria-presed="true" style="background-color: #ff9999">The Honest Kitchen</button></a></center>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="col-lg-6 wow zoomInRight" data-wow-delay="0.8s">
+                        <center>
+                            <div class="panel panel-default text-center">
+                                <div class="panel-head">
+                                    <h4>VET ON DEMAND</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <img src="https://images.ecosia.org/ehIjWQOvU9OKbnO7Gyd_RfuT3II=/0x390/smart/http%3A%2F%2Fwww.feirox.com%2Frivu%2F2016%2F01%2FVet-On-Demand-2.png" height="220px">
+                                    <center><p style="color: #333333; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">We are so grateful to the veterinary services that Vet On Demand provides to us!</p></center>
+                                </div>
+                                <div class="panel-footer">
+                                    <center><a href="https://angel.co/vetondemand"><button class="btn btn-outline-primary" aria-presed="true" style="background-color: #ff9999">Vet On Demand</button></a></center>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <!--line sbetween the two rows-->
+                <hr width="80%">
+                <div class="row" style="padding: 15px 0 0 0">
+                    <div class="col-md-6 wow zoomInLeft" data-wow-delay="0.2s">
+                        <center>
+                            <div class="panel panel-default text-center">
+                                <div class="panel-head">
+                                    <h4>SWIFTO</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <img src="https://images.ecosia.org/3SedaLek3sBP-PeAj6CixMgYSts=/0x390/smart/http%3A%2F%2Fwww.sfdogwalker.com%2Fimages%2Fimg%2FSwifto-logo.jpg" height="220px">
+                                    <center><p style="color: #333333; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">We're very thankful to Swifto for the walking services that they provide for our dogs!</p></center>
+                                </div>
+                                <div class="panel-footer">
+                                    <center><a href="https://www.swifto.comK"><button class="btn btn-outline-primary" aria-presed="true" style="background-color: #ff9999">Swifto</button></a></center>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="col-lg-6 wow zoomInRight" data-wow-delay="0.8s">
+                        <center>
+                            <div class="panel panel-default text-center">
+                                <div class="panel-head">
+                                    <h4>PETSMART</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <img src="https://images.ecosia.org/-yXt4IeBq4wcmyr7g5xkPLU9FP4=/0x390/smart/http%3A%2F%2Fwww.theblackfridaycoupons.com%2Fwp-content%2Fuploads%2F2015%2F08%2FPetsmart-Black-Friday-Deals-Sales-Ads.jpg" height="220px">
+                                    <center><p style="color: #333333; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Thank you so much, PetSmart, for funding our projects to bring in more stray pets!</p></center>
+                                </div>
+                                <div class="panel-footer">
+                                    <center><a href="https://www.petsmart.com/?utm_source=bing&utm_medium=cpc&utm_term=pet%20mark%7C412%7C634961%7C77309474456730&utm_content=Misspellings%253ECore%253EExact&utm_campaign=US_Enterprise_Search_Near%3EBrand_PetSmart_DT_nv&msclkid=b7f19c1e2270171e324cc7eae6435be3&utm_source=bing&utm_medium=cpc&utm_campaign=US_Enterprise_Search_Near%3EBrand_PetSmart_DT_nv&utm_term=pet%20mark&utm_content=Misspellings%3ECore%3EExact"><button class="btn btn-outline-primary" aria-presed="true" style="background-color: #ff9999">PetSmart</button></a></center>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>  
+            <div class="justToPad" style="padding: 60px"></div>
+            <!--End Partners-->
+        
         
             <!--Team-->
             <div class="team" id="team">
@@ -168,13 +260,22 @@
                 <div class="row">
                     <div class="col-md-6">
                          <div>
-                              <h1>Volunteer at Home for Best Friends</h1>
+                              <h2>VOLUNTEER AT HOME FOR BEST FRIENDS</h2>
                               <p align="left">Volunteers are the backbone of HFBF and without their time, talents, and resources we would not be able to do our daily operations and save the lives many  animals each year. </p>
                               <ul>
                                  <li><strong>Animal Care</strong> <dd> Volunteer at the shelter caring for the animals.This includes feeding, cleaning and walking dogs and cats.</dd></li>
                                  <li><strong>Data Entry</strong><dd>Volunteers will help with entering various pieces of information into our customized applications. </dd></li>
                                  <li><strong>Front Desk Greeter</strong><dd>Front Desk Coverage involves answering phones and greeting shelter guests</dd></li>
                                  <li><strong>Fundraising & Friendraising</strong><dd>Volunteers help with information tables, fundraising activities, and events.</dd></li>
+                                 <li><strong>Donate</strong><dd>Donate to us so that we can continue to keep saving stray pets.</dd>
+                                     <a href="donate.html"><button class="btn btn-outline-primary">$25</button></a>
+                                     <a href="donate.html"><button class="btn btn-outline-primary">$50</button></a>
+                                     <a href="donate.html"><button class="btn btn-outline-primary">$100</button></a>
+                                     <a href="donate.html"><button class="btn btn-outline-primary">$500</button></a>
+                                     <a href="donate.html"><button class="btn btn-outline-primary">$1000</button></a>
+                                     <a href="donate.html"><input type="text" class="form-control" placeholder="$" aria-label="" aria-describedby="basic-addon1" style="width: 80px; text-align: center">
+                                     <a href="donate.html"><button class="btn btn-primary">Pay here</button></a>
+                                 </li>
                               <ul>
                                      
                                  </ul>
@@ -228,16 +329,14 @@
         </div>
         <!--End Statistics-->
 <hr>
-        <!--Contact-->
-        <div class="contact" id="contact">
-            
-        </div>
         <!--End of Contact-->
         
-        <!--Footer-->
-        <div class="footer" id="footer">
-            
-        </div>
+        <!--Footer & Contact (More Information)-->
+        <div id="footer" class="footer">
+            <h2 class="text-center">MORE INFORMATION</h2>
+           
+        </div>    
+                   
         <!--End of Footer-->
         
         <!--https://getbootstrap.com/docs/4.0/components/navbar/-->
@@ -246,5 +345,8 @@
         https://www.w3schools.com/howto/howto_css_signup_form.asp
         https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select
         https://gget.com/coffee-->
+        
+    <!--Javascript-->
+    <script type="text/javascript" src="javascript.js"></script>
     </body>
  </html>
