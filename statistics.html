@@ -34,8 +34,6 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        
 
 
 
@@ -44,33 +42,33 @@
     <body height="100%" width="100%">
     
         <!--Navbar-->
-        <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" data-toggle="dropdown" href="#">Home For Best Friends <span class="caret"></span></a>
-      	<ul class="dropdown-menu">
-        	<li><a href="index.html #aboutUs">About Us</a></li>
-            <li><a href="index.html #team">Team</a></li>
-            <li><a href="index.html #partners">Partners</a></li>
-        </ul>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Get Involved <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="getInvolved.html #donate">Donate</a></li>
-          <li><a href="getInvolved.html #volunteer">Volunteer</a></li>
-        </ul>
-      </li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="services.html"></a>Animal Stuff</li>
-          <li><a href="services.html #stats">Statistics</a></li>
-          <li><a href="services.html #adopt">Adopt</a></li>
-        </ul>
-      </li>
-    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More Information</a>
-    </li>
-  </ul>
-  </div>
-</nav>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <div class="dropdown">
+                <a class="navbar-brand" href="#">Home For Best Friends</a>
+                <i class="fas fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a style="color: black; text-align: left" href="#meetOurTeam">Our Team</a>
+                    <a style="color: black: text-align: left" href="#partners">Our Partners</a>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Nav">
+                <ul class="navbar-nav ml-auto">
+                    <li>
+                        <a class="nav-link" href="adopt.html">Adopt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="statistics.html">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="getInvolved.html">Get Involved</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <!--End Navbar-->
