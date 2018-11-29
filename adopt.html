@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <title>Home for Best Friends</title>
     <head>
         <!--Bootstrap-->
   
@@ -17,50 +18,211 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
          
         <!--CSS-->
-        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css"/>
 
         <!--Amimate.CSS-->
         <link rel="stylesheet" type = "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         
+        <!--Google Fonts Montserrat-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+        
+        <!--Google Fonts Oswald-->
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        
+        <!--Google Fonts Open Sans Condensed-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.img { 
-    /* The image used */
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDRlR-mTVIJVuxd7NQkb-eK-gejyKOXZ-9u01K0VjxUhOyWavh");
-
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+html {
+    scroll-behavior: smooth;
 }
+
+
+h2 {
+    color: #80bfff;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: capitalize;
+}
+
+    .dropdown-content {
+        position: absolute !important;
+        background-color: gray;
+    }
+    .dropdown-content a {
+        text-align: center !important;
+        color: white !important;
+        float: none;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        color: black !important;
+        background-color: #ff00d7 !important;
+        transition: all 300ms ease-in-out !important;
+    }
+
+/*SLIDESHOW*/
+
+/*NAVBAR*/
+.navbar {
+    margin-bottom: 0;
+    background-color: #80bfff !important;
+    border: 0;
+    font-size: 20px !important;
+    font-weight: bold;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+}
+#nav  a  {
+    color: #1a1a1a;
+    text-align: center;
+}
+#nav  a:hover {
+    transition: all 300ms ease-in-out;
+    color: #1a1a1a;
+    background-color: #ff00d7;
+}
+#Nav  a  {
+    color: #1a1a1a;
+    text-align: center;
+}
+#Nav  a:hover {
+    transition: all 300ms ease-in-out;
+    color: #1a1a1a;
+    background-color: #ff00d7;
+}
+
+
+#creditCardPayment {
+    padding: 1000px 0 0 0;
+}
+
+.volunteer {
+    padding:70px 0px 0px 15px;
+    
+}
+
+.pet1 {
+    width:300px;
+    text-align:center;
+}
+
+.heading {
+    margin: 0 auto;
+}
+
+/*MORE INFORMATION*/
+.footer {
+    background-color: #003366;
+    text-align: center;
+}
+.footer p {
+    color: white;
+    font-weight: bold;
+}
+.footer h2 {
+    padding: 100px 0 0 0;
+}
+.iconsForFooter i {
+    height: 40px;
+    width: 40px;
+    color: #ff00d7;
+    padding: 0 0 15px 0;
+}
+.footer .btn {
+    background-color: #ff00d7;
+    color: black;
+}
+
+.footer .btn:hover {
+    background-color: #80bfff;
+    color: white;
+}
+
+.followUp i {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #ff00d7;
+    color: white;
+}
+ .followUp i:hover {
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+    background-color: #80bfff;
+ }
+/*END MORE INFORMATION*/
+ 
+/*PANEL STUFF*/
+.panel .btn {
+    background-color: #ff00d7;
+    color: black;
+}
+
+.panel .btn:hover {
+    background-color: #80bfff;
+    color: white;
+}
+.panel-head {
+    background-color: #80bfff;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.panel-head h4 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.panel p {
+    padding: 15px 0 0 0;    
+}
+
+
+.panel {
+    width: 400px;
+}
+
+.panel-footer {
+    background-color: #cccccc;
+    padding: 10px 0 10px 0;
+}
+/*END PANEL STUFF*/
 </style>
 
-
+        <link rel="shortcut icon" type="image/x-icon" href="house.png">
     </head>
     <body>
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <div id="nav">
             <a class="navbar-brand" href="index.html">Home For Best Friends</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+            </div>
+                <div class="collapse navbar-collapse" id="Nav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="adopt.html">Adopt</a>
+                            <div class="dropdown">
+                                <a class="nav-link" href="#adopt">Adopt</a>
+                                <div class="dropdown-content">
+                                    <a class="nav-link" href="#footer">More Information</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html #services">Our Services</a>
+                            <a class="nav-link" href="getInvolved.html">Get Involved</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html #statistics">Statistics</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#getInvolved">Get Involved</a>
+                            <a class="nav-link" href="services.html">Our Services</a>
                         </li>
                     </ul>
                 </div>
@@ -69,70 +231,191 @@
         
         <!--Adopt-->
         <div class="adopt" id="adopt">
-            <h4>Adopt an Animal</h4>
-             <div class="row">
-                    <div class="col-lg-3">
-                        <div class="panel panel-default text-center">
-                            <div class="panel-head">
-                                <h3 style="color: white">COCOA</h3>
-                            </div>
-                            <div class="panel-body">
-                                <img src="https://www.akc.org/wp-content/themes/akc/component-library/assets//img/welcome.jpg" style="height: 350px; width: 350px">
-                                <ul>
-                                    <li>
-                                        Age: 17 years
-                                    </li>
-                                    <li>
-                                        Gender: Male
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="panel-footer">
-                                <center><a href="adoptpet1.html"><button class="btn btn-primary">SEE MORE</button></a></center>
-                            </div>
+            <h2>ADOPT OUR PETS</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 wow slideInLeft">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-head">
+                            <h4>COCOA</h4>
+                        </div>
+                        <div class="panel-body">
+                            <img src="https://www.akc.org/wp-content/themes/akc/component-library/assets//img/welcome.jpg" style="height: 330px; width: 350px">
+                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Cocoa is a 10 year old brown-white German Sheperd. His favorite food is chicken, and he sure does love to play!</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><a href="adoptpet1.html"><button class="btn btn-primary">SEE MORE</button></a></center>
                         </div>
                     </div>
-                     <div class="col-lg-3">
-                        <div class="panel panel-default text-center">
-                            <div class="panel-head">
-                                <h3 style="color: white">Joey</h3>
-                            </div>
-                            <div class="panel-body">
-                                <img src="https://www.akc.org/wp-content/themes/akc/component-library/assets//img/welcome.jpg" style="height: 350px; width: 350px">
-                                 <center>
-                                    
-                                    <span>2 years</span>
-                                    <span>,&nbsp;Female</span>
-                                  </center>
-                                <ul>
-                                    <li>
-                                        Age: 17 years
-                                    </li>
-                                    <li>
-                                        Gender: Male
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="panel-footer">
-                                <center><a href="adoptpet1.html"><button class="btn btn-primary">SEE MORE</button></a></center>
-                            </div>
+                </div>
+                <div class="col-lg-4 col-md-4 wow slideInUp">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-head">
+                            <h4>MASHKI</h4>
+                        </div>
+                        <div class="panel-body">
+                            <img src="cat.jpg" style="height: 330px; width: 340px">
+                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Mashki is a 2 year old cat who gets cranky without her beauty sleep! She also enjoys to chase yarn, and eat gourmet salmon!</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><button class="btn btn-primary">SEE MORE</button></center>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-3">
-                     <a href="adoptpet1.html">
-                      <div class="pet1">
-                        <img src="https://www.akc.org/wp-content/themes/akc/component-library/assets//img/welcome.jpg" height="170px">
-                        <center>
-                           <h4>Joey</h4> 
-                           <span>2 years</span>
-                           <span>,&nbsp;Female</span>
-                        </center>
-                     </div>
-                     </a>
+                </div>
+                 <div class="col-lg-4 col-md-4 wow slideInRight">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-head">
+                            <h4>BAGEL</h4>
+                        </div>
+                        <div class="panel-body">
+                            <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12234114/Dachshund-On-White-01.jpg" style="height: 330px; width: 392px">
+                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Bagel is a 6 year old brown dachshund who is very protective of his bones! Bagel also loves to run around; he gets plenty of exercise.</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><button class="btn btn-primary">SEE MORE</button></center>
+                        </div>
                     </div>
-                    <!--<img src="https://www.akc.org/wp-content/themes/akc/component-library/assets//img/welcome.jpg" height="170px">-->
-              </div>
-          
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 wow slideInLeft">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-head">
+                            <h4>PETER</h4>
+                        </div>
+                        <div class="panel-body">
+                            <img src="rabbit.jpg" style="height: 330px; width: 350px">
+                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Peter is an 8 year old brown-haired Palomino rabbit. He loves carrots, bananas and very long naps.</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><button class="btn btn-primary">SEE MORE</button></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 wow slideInUp">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-head">
+                            <h4>MASHKI</h4>
+                        </div>
+                        <div class="panel-body">
+                            <img src="https://ak5.picdn.net/shutterstock/videos/3715925/thumb/1.jpg" style="height: 330px; width: 350px">
+                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Mashki is a 2 year old cat who gets cranky without her beauty sleep! She also enjoys to chase yarn, and eat gourmet salmon!</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><button class="btn btn-primary">SEE MORE</button></center>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-4 wow slideInRight">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-head">
+                            <h4>BAGEL</h4>
+                        </div>
+                        <div class="panel-body">
+                            <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12234114/Dachshund-On-White-01.jpg" style="height: 330px; width: 392px">
+                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Bagel is a 6 year old brown dachshund who is very protective of his bones! Bagel also loves to run around; he gets plenty of exercise.</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><button class="btn btn-primary">SEE MORE</button></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 wow slideInLeft">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-head">
+                            <h4>COCOA</h4>
+                        </div>
+                        <div class="panel-body">
+                            <img src="https://www.akc.org/wp-content/themes/akc/component-library/assets//img/welcome.jpg" style="height: 330px; width: 350px">
+                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Cocoa is a 10 year old brown-white German Sheperd. His favorite food is chicken, and he sure does love to play!</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><a href="adoptpet1.html"><button class="btn btn-primary">SEE MORE</button></a></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 wow slideInUp">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-head">
+                            <h4>MASHKI</h4>
+                        </div>
+                        <div class="panel-body">
+                            <img src="https://ak5.picdn.net/shutterstock/videos/3715925/thumb/1.jpg" style="height: 330px; width: 350px">
+                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Mashki is a 2 year old cat who gets cranky without her beauty sleep! She also enjoys to chase yarn, and eat gourmet salmon!</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><button class="btn btn-primary">SEE MORE</button></center>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-4 wow slideInRight">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-head">
+                            <h4>BAGEL</h4>
+                        </div>
+                        <div class="panel-body">
+                            <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12234114/Dachshund-On-White-01.jpg" style="height: 330px; width: 392px">
+                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Bagel is a 6 year old brown dachshund who is very protective of his bones! Bagel also loves to run around; he gets plenty of exercise.</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><button class="btn btn-primary">SEE MORE</button></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imJustPaddingHereThatsAllPLeaseMoveAlong" style="padding: 0 0 135px 0"></div>
+                    
+                
+          <!--End Adopt-->
+        <!--Footer & Contact (More Information)-->
+        <div class="footer" id="footer">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
+                    <h2>CONTACT US</h2>
+                    <center>
+                        <form class="donateForm">
+                            <div style="padding: 0 0 10px 0">
+                                <input style="text-align: center; width: 400px" type="text" name="email" placeholder="E-MAIL">
+                            </div>
+                            <div style="padding: 0 0 10px 0">
+                                <input style="text-align: center; width: 200px" type="text" name="name" placeholder="NAME">
+                                <input style="text-align: center; width: 200px" type="text" name="phoneNumber" placeholder="PHONE NUMBER"> 
+                            </div>
+                            <textarea id="feedback" name="feedback" placeholder="Please write any feedback that you have here..." style="height:200px; width: 400px"></textarea>
+                            <div style="padding: 0 0 10px 0">
+                                <button onclick="alert('Thank you for submitting your feedback to us. We will get back to you within 1 - 3 bussines days.')" class="btn btn-primary" style="width: 400px">SUBMIT</button>
+                            </div>
+                        </form>
+                    </center>
+                </div>
+                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
+                    <div class="iconsForFooter" style="padding-left: 45px">
+                        <h2>EXTRA INFOMATION</h2>
+                        <p><i class="fa fa-home"></i>Po Box 176 New York, NY, 11221</p><br>
+                        <p><i class="fa fa-envelope"></i>HFBF@gmail.com</p><br>
+                        <p><i class="fa fa-phone"></i>(212) 546 - 6546</p><br>
+                        <p><i class="fas fa-hand-paper"></i>Privacy</p><br>
+                        <p><i class="fas fa-scroll"></i>Terms and Conditions</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
+                    <div class="followUp">
+                        <h2>FOLLOW UP</h2>
+                        <p>Subscribe to our monthly newsletter here!</p>
+                        <div style="padding: 0 0 10px 0">
+                            <input style="text-align: center; width: 400px; text-align: center" type="text" name="email" placeholder="E-MAIL">
+                        </div>
+                            <button onclick="alert('Thank you for signing up for our daily newsletter!')" class="btn btn-primary" id="footerButton" style="width: 400px">SUBMIT</button>
+                        <p>You can also find us on these social media networks</p>
+                        <a href="https://www.facebook.com/Home-For-Best-Friends-2204712393101351/?modal=admin_todo_tour"><i class="fab fa-facebook-f"></i></a>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div> 
+        </div>
         <!--End Adopt-->
     </body>
 </html>

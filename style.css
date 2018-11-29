@@ -1,3 +1,30 @@
+
+
+.dropdown-content {
+            position: absolute !important;
+            background-color: gray !important;
+        }
+        .dropdown-content a {
+            text-align: center !important;
+            color: white !important;
+            float: none !important;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            color: black !important;
+            background-color: #ff00d7;
+        }
+        #nav  a  {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    color: #1a1a1a;
+    text-align: center;
+}
+#nav  a:hover {
+    transition: all 300ms ease-in-out !important;
+    color: #1a1a1a ;
+    background-color: #ff00d7 !important;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -13,8 +40,7 @@ h2 {
 .dropdown-content {
     display: none;
     color: black !important;
-    text-align: left !important;
-    padding: 5px 0 0 0;
+    text-align: center !important;
 }
 
 .dropdown:hover .dropdown-content {
@@ -24,29 +50,46 @@ h2 {
 /*SLIDESHOW*/
 
 .aboutImages img {
-    padding: 20px 0 0 0;
-    width: 650px !important;
-    height: 450px !important;
+    height: 750px !important;
 }
 /*NAVBAR*/
 .navbar {
     margin-bottom: 0;
     background-color: #80bfff !important;
     border: 0;
-    font-size: 12px !important;
+    font-size: 20px !important;
+    font-weight: bold;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
     text-align: left;
 }
-.navbar  a  {
-    color: yellow;
+#Nav  a  {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    color: #1a1a1a;
     text-align: center;
 }
-.navbar  a:hover {
-    transition: all 300ms ease-in-out;
-    color: #ff6666;
-    background-color: #ff00d7;
+#Nav  a:hover {
+    transition: all 300ms ease-in-out !important;
+    color: #1a1a1a ;
+    background-color: #ff00d7 !important;
 }
+    .dropdown-content {
+        position: absolute !important;
+        background-color: gray;
+    }
+    .dropdown-content a {
+        text-align: center !important;
+        color: white !important;
+        float: none;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        color: black !important;
+        background-color: #ff00d7 !important;
+        transition: all 300ms ease-in-out !important;
+    }
+
 /*SLIDESHOW*/
 .slideshow {
     padding: 56px 0px 0px 0px;
@@ -62,7 +105,10 @@ h2 {
     padding: 20px 0 0 0 !important;
 }
 .about p {
+    font-family: 'Open Sans Condensed', sans-serif !important;
     text-align: center;
+    font-size: 25px;
+    color: #1a1a1a;
     padding: 50px 0 10px 0;
 }
 .about i {
@@ -71,7 +117,7 @@ h2 {
     padding: 5px;
     font-size: 30px;
     border-radius: 50%;
-    background-color: #ff9999;
+    background-color: #ff00d7;
     color: white;
 }
 .about i:hover {
@@ -84,22 +130,27 @@ h2 {
     
 #events iframe{
     width:500px;
-    height:400pxz;
+    height:400px;
 }
 /*MEET OUR TEAM*/
 .meetOurTeam {
-    padding: 100px;
-    background-color: #808080;
+    padding: 57px;
+    background-color: #003366;
 }
 .meetOurTeam img {
+    alignment-baseline: central;
     padding: 10px 50px 10px 50px;
 }
-.meetOurTeam p, h5 {
-    text-align: center;
+.meetOurTeam  h5 {
+    text-align: center !important;
     font-family: 'Open Sans Condensed', sans-serif;
 }
+
 .meetOurTeam p {
-    color: #333333;
+    color: white;
+    text-align: center !important;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 0 0 0 25px;
 }
 .meetOurTeam i {
     height: 40px;
@@ -107,7 +158,7 @@ h2 {
     padding: 5px;
     font-size: 30px;
     border-radius: 50%;
-    background-color: #ff9999;
+    background-color: #ff00d7;
     color: white;
 }
 .meetOurTeam i:hover {
@@ -117,33 +168,33 @@ h2 {
     background-color: #80bfff;
 }
 .meetOurTeam h4 {
+    font-size: 21px;
+    color: #ff00d7 !important;
     font-family: 'Oswald', sans-serif;
-    font-size: 4;
-    text-align: center;
+    padding: 0 0 0 20px;
     text-transform: capitalize !important;
-    color: black;
-}
-.meetOurTeam h4:hover {
-    font-size: 5;
-    background-color: #80bfff;
 }
 /*END MEET OUR TEAM*/
 
 /*PARTNERS*/
 
 .partners {
-    padding: 80px 0 0 0;
+    padding: 80px 0 27px 0;
 }
-.partners btn btn-outline-primary:hover {
+.partners .btn {
+    background-color: #ff00d7;
     color: black;
 }
+
+.partners .btn:hover {
+    background-color: #80bfff;
+    color: white;
+}
+
 .panel {
     width: 400px;
     margin: 40px;
     border-style: solid;
-}
-.panel btn:hover {
-    background-color: #80bfff;
 }
 
 .panel-head {
@@ -166,17 +217,14 @@ h2 {
     padding: 10px 0 10px 0;
 }
 
-.verticalLine {
-    border-left: thick solid black;
-}
 
 
 #creditCardPayment {
     padding: 1000px 0 0 0;
 }
 
-.adopt {
-    padding-top:55px;
+#adopt {
+    padding-top: 75px;
 }
 
 .volunteer {
@@ -193,17 +241,54 @@ h2 {
     margin: 0 auto;
 }
 
- 
-/*MEET OUR TEAM*/
-
-#footerButton {
-    background-color: #80bfff;
-}
-
-#footerButton:hover {
-    background-color: #ff00d7;
-}
-
+/*MORE INFORMATION*/
 .footer {
+    background-color: #003366;
     text-align: center;
+}
+.footer p {
+    color: white;
+    font-weight: bold;
+}
+.footer h2 {
+    padding: 100px 0 0 0;
+}
+.iconsForFooter i {
+    height: 40px;
+    width: 40px;
+    color: #ff00d7;
+    padding: 0 0 15px 0;
+}
+.footer .btn {
+    background-color: #ff00d7;
+    color: black;
+}
+
+.footer .btn:hover {
+    background-color: #80bfff;
+    color: white;
+}
+
+ .followUp i {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #ff00d7;
+    color: white;
+}
+ .followUp i:hover {
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+    background-color: #80bfff;
+ }
+ 
+#getInvolved h4{
+    padding-bottom: 20px;
+}
+
+.muney{
+    padding:5px;
 }

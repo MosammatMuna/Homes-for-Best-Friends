@@ -35,40 +35,62 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+   
+    <style>
+      .textForAdoption {
+          padding: 80px;
+      }
+      
+      #nav a  {
+        color: #1a1a1a;
+        text-align: center;
+    }
+    
+      #nav  a:hover {
+        transition: all 300ms ease-in-out;
+        color: #1a1a1a;
+        background-color: #ff00d7;
+    }
 
-
+        
+    </style>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="house.png">
+    
     </head>
      
     <body height="100%" width="100%">
     
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-            <div class="dropdown">
-                <a class="navbar-brand" href="#">Home For Best Friends</a>
-                <i class="fas fa-caret-down"></i>
-                <div class="dropdown-content">
-                    <a style="color: black; text-align: left" href="#meetOurTeam">Our Team</a>
-                    <a style="color: black: text-align: left" href="#partners">Our Partners</a>
-                </div>
+            <div id="nav">
+                <a class="navbar-brand" href="index.html">Home For Best Friends</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="Nav">
                 <ul class="navbar-nav ml-auto">
                     <li>
                         <a class="nav-link" href="adopt.html">Adopt</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Our Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="statistics.html">Statistics</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="getInvolved.html">Get Involved</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Our Services</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <!--End Navbar-->
+        
+        <!--Confirmation of request of adoption-->
+        <div class="textForAdoption">
+            <center><p style="font-size: 50px">Thank you for considering Cocoa to be a part of your home! We have received your name, phone number, and e-mail. In the following days, we will send you an e-mail regarding the date and location for the interview to see if you're a good match for Cocoa.</p></center>
+        </div>
+        
+        
+ </body>
+ </html>
+   
