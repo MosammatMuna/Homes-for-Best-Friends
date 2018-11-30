@@ -35,6 +35,7 @@ h2 {
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
     text-transform: capitalize;
+    font-weight: bold !important;
 }
 
 .dropdown-content {
@@ -109,7 +110,7 @@ h2 {
     text-align: center;
     font-size: 25px;
     color: #1a1a1a;
-    padding: 50px 0 10px 0;
+    padding: 0 10em;
 }
 .about i {
     height: 40px;
@@ -195,6 +196,7 @@ h2 {
     width: 400px;
     margin: 40px;
     border-style: solid;
+    border-radius: 1%;
 }
 
 .panel-head {
@@ -204,12 +206,14 @@ h2 {
 
 .panel-head h4 {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
+    font-weight: bold;
 }
 
 .panel p {
-    padding: 15px;    
+    padding: 15px; 
+    font-weight: bold;
 }
 
 .panel-footer {
