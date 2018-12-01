@@ -196,6 +196,30 @@ h2 {
     padding: 10px 0 10px 0;
 }
 /*END PANEL STUFF*/
+/*filter button*/
+
+ 
+
+ 
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+  /*End filter button*/  
+
 </style>
 
         <link rel="shortcut icon" type="image/x-icon" href="house.png">
@@ -229,25 +253,34 @@ h2 {
                 </div>
         </nav>
         <!--End Navbar-->
-        
-        <!--Adopt-->
+        <!DOCTYPE html>
+<html>
+<style>
+
+}
+
+
+
+
+
+
+
+</style>
+<body>
+
+<h2>Search petes</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('filterDiv cats')"> Cats</button>
+  <button class="btn" onclick="filterSelection('Dogs')">Dogs</button>
+  <button class="btn" onclick="filterSelection('filterDiv cats')"> Rabbit</button>
+</div>
+   
+   <div class="filterDiv cats">
         <div class="adopt" id="adopt" style="padding: 68px 25px 0 0">
-            <h2>ADOPT OUR PETS</h2>
             <div class="row" style="padding: 0 85px 0 50px">
-                <div class="col-lg-4 col-md-4 wow slideInLeft">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-head">
-                            <h4>COCOA</h4>
-                        </div>
-                        <div class="panel-body">
-                            <img src="https://www.akc.org/wp-content/themes/akc/component-library/assets//img/welcome.jpg" style="height: 330px; width: 350px">
-                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Cocoa is a 10 year old brown-white German Sheperd. His favorite food is chicken, and he sure does love to play!</p>
-                        </div>
-                        <div class="panel-footer">
-                            <center><a href="adoptpet1.html"><button class="btn btn-primary">SEE MORE</button></a></center>
-                        </div>
-                    </div>
-                </div>
+              
                 <div class="col-lg-4 col-md-4 wow slideInUp">
                     <div class="panel panel-default text-center">
                         <div class="panel-head">
@@ -262,43 +295,14 @@ h2 {
                         </div>
                     </div>
                 </div>
-                 <div class="col-lg-4 col-md-4 wow slideInRight">
+                 
+                <div class="col-lg-4 col-md-4 wow slideInUp">
                     <div class="panel panel-default text-center">
                         <div class="panel-head">
-                            <h4>BAGEL</h4>
+                            <h4>LINDA</h4>
                         </div>
                         <div class="panel-body">
-                            <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12234114/Dachshund-On-White-01.jpg" style="height: 330px; width: 392px">
-                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Bagel is a 6 year old brown dachshund who is very protective of his bones! Bagel also loves to run around; he gets plenty of exercise.</p>
-                        </div>
-                        <div class="panel-footer">
-                            <center><button class="btn btn-primary">SEE MORE</button></center>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-head">
-                            <h4>PETER</h4>
-                        </div>
-                        <div class="panel-body">
-                            <img src="rabbit.jpg" style="height: 330px; width: 350px">
-                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Peter is an 8 year old brown-haired Palomino rabbit. He loves carrots, bananas and very long naps.</p>
-                        </div>
-                        <div class="panel-footer">
-                            <center><button class="btn btn-primary">SEE MORE</button></center>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-head">
-                            <h4>MASHKI</h4>
-                        </div>
-                        <div class="panel-body">
-                            <img src="https://ak5.picdn.net/shutterstock/videos/3715925/thumb/1.jpg" style="height: 330px; width: 350px">
+                            <img src="cat.jpg" style="height: 330px; width: 340px">
                             <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Mashki is a 2 year old cat who gets cranky without her beauty sleep! She also enjoys to chase yarn, and eat gourmet salmon!</p>
                         </div>
                         <div class="panel-footer">
@@ -306,74 +310,83 @@ h2 {
                         </div>
                     </div>
                 </div>
-                 <div class="col-lg-4 col-md-4">
+                 
+                <div class="col-lg-4 col-md-4 wow slideInUp">
                     <div class="panel panel-default text-center">
                         <div class="panel-head">
-                            <h4>BAGEL</h4>
+                            <h4>ZENA</h4>
                         </div>
                         <div class="panel-body">
-                            <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12234114/Dachshund-On-White-01.jpg" style="height: 330px; width: 392px">
-                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Bagel is a 6 year old brown dachshund who is very protective of his bones! Bagel also loves to run around; he gets plenty of exercise.</p>
+                            <img src="cat.jpg" style="height: 330px; width: 340px">
+                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Mashki is a 2 year old cat who gets cranky without her beauty sleep! She also enjoys to chase yarn, and eat gourmet salmon!</p>
                         </div>
                         <div class="panel-footer">
                             <center><button class="btn btn-primary">SEE MORE</button></center>
                         </div>
                     </div>
                 </div>
-            </div>
+                
         </div>
         <div class="imJustPaddingHereThatsAllPLeaseMoveAlong" style="padding: 0 0 135px 0"></div>
                     
-                
-          <!--End Adopt-->
-        <!--Footer & Contact (More Information)-->
-        <div class="footer" id="footer">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
-                    <h2>CONTACT US</h2>
-                    <center>
-                        <form class="donateForm">
-                            <div style="padding: 0 0 10px 0">
-                                <input style="text-align: center; width: 400px" type="text" name="email" placeholder="E-MAIL">
-                            </div>
-                            <div style="padding: 0 0 10px 0">
-                                <input style="text-align: center; width: 200px" type="text" name="name" placeholder="NAME">
-                                <input style="text-align: center; width: 200px" type="text" name="phoneNumber" placeholder="PHONE NUMBER"> 
-                            </div>
-                            <textarea id="feedback" name="feedback" placeholder="Please write any feedback that you have here..." style="height:200px; width: 400px"></textarea>
-                            <div style="padding: 0 0 10px 0">
-                                <button onclick="alert('Thank you for submitting your feedback to us. We will get back to you within 1 - 3 bussines days.')" class="btn btn-primary" style="width: 400px">SUBMIT</button>
-                            </div>
-                        </form>
-                    </center>
-                </div>
-                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
-                    <div class="iconsForFooter" style="padding-left: 45px">
-                        <h2>EXTRA INFOMATION</h2>
-                        <p><i class="fa fa-home"></i>Po Box 176 New York, NY, 11221</p><br>
-                        <p><i class="fa fa-envelope"></i>HFBF@gmail.com</p><br>
-                        <p><i class="fa fa-phone"></i>(212) 546 - 6546</p><br>
-                        <p><i class="fas fa-hand-paper"></i>Privacy</p><br>
-                        <p><i class="fas fa-scroll"></i>Terms and Conditions</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
-                    <div class="followUp">
-                        <h2>FOLLOW UP</h2>
-                        <p>Subscribe to our monthly newsletter here!</p>
-                        <div style="padding: 0 0 10px 0">
-                            <input style="text-align: center; width: 400px; text-align: center" type="text" name="email" placeholder="E-MAIL">
-                        </div>
-                            <button onclick="alert('Thank you for signing up for our daily newsletter!')" class="btn btn-primary" id="footerButton" style="width: 400px">SUBMIT</button>
-                        <p>You can also find us on these social media networks</p>
-                        <a href="https://www.facebook.com/Home-For-Best-Friends-2204712393101351/?modal=admin_todo_tour"><i class="fab fa-facebook-f"></i></a>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                </div>
-            </div> 
-        </div>
-    
-        <!--End Adopt-->
-    </body>
+ 
+<div class="container">
+  <div class="filterDiv cats"></div>
+  <div class="filterDiv cats"></div>
+  <div class="filterDiv cats"></div>
+  <div class="filterDiv Dogs"></div>
+  <div class="filterDiv Dogs"></div>
+  <div class="filterDiv Dogs"></div>
+  <div class="filterDiv Rabbit"></div>
+  <div class="filterDiv Rabbit"></div>
+  <div class="filterDiv Rabbit"></div>
+  
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
+
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
 </html>
