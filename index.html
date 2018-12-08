@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
  <html>
-     <title>Home for Best Friends</title>
+     <title>Homes for Best Friends</title>
     <head>
      <!--Bootstrap-->
   
@@ -86,32 +86,37 @@ chart.render();
     
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" width="100%">
-            <div class="dropdown" id="nav">
-                <a class="navbar-brand"  href="#slideshow">Home For Best Friends</a>
-                <div class="dropdown-content">
-                    <a style="color: black; text-align: center; text-decoration: none" href="#meetOurTeam">Our Team</a>
-                    <a style="color: black !important: text-align: center !important; text-decoration: none" href="#partners">Our Partners</a>
-                    <a style="color: black !important: text-align: center !important; text-decoration: none" href="#statistics">Statistics</a>
-                    <a style="color: black !important: text-align: center !important; text-decoration: none" href="#footer">More Information</a>
-                </div>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Nav">
+            <div class="navbarBigButton">
+                <a class="navbar-brand" href="#slideshow" style="font-size: 30px">Homes For Best Friends</a>
+                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#Nav">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="Nav">
                 <ul class="navbar-nav ml-auto">
                     <li>
-                        <a class="nav-link" href="adopt.html">Adopt</a>
+                        <div class="dropdown"> 
+                            <a class="nav-link" href="#aboutUs">About Us<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content">
+                                <a class="nav-link" href="#missionStatement">Mission Statement</a>
+                                <a class="nav-link" href="#statistics">Statstics</a>
+                                <a class="nav-link" href="#services">Our Services</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="getInvolved.html">Get Involved</a>
+                        <a class="nav-link" href="behindTheScenes.html">Behind The Scenes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Our Services</a>
+                            <a class="nav-link" href="getInvolved.html">Get Involved</a>
                     </li>
+                </ul>
             </div>
         </nav>
         <!--End Navbar-->
+        
+        
+        
         
         <!--Slideshow-->
         <div class="slideshow" id="slideshow" width="100%" height="100%">
@@ -127,150 +132,36 @@ chart.render();
                 </div>
             </center>
         </div>
+        
+        
         <!--About Us-->
-        <div class="aboutUs" id="aboutUs" width="100%">
+        
+        <div class="aboutUs" id="aboutUs" width="100%" style="padding-top: 30px">
+            <center>
+                <h2 style="padding-bottom: 0 !important; padding-top: 38px; font-size: 40px">ABOUT US</h2>
+                <h4>Familiarize yourself with our work!</h4>
+            </center>
             <!--About-->
             <div class="about" id="about">
-                <div class="row" >
+                <div class="row">
                     <div class="col-md-12 col-lg-12 wow slideInUp">
-                        <div>
-                            <h2>ABOUT US</h2>
+                        <div class="missionStatement" id="missionStatement">
+                            <h2 style="padding-top: 70px">OUR MISSION STATEMENT</h2>
                             <center><i class="fas fa-info-circle"></i></center>
                         </div>
                         <div>
-                        <p>These pets that you viewed above were in desperate need of affection and care. Luckily, they were brought into our Home For Best Friends shelter. We, the team at Home For Best Friends, are dedicated to helping vulnerable animals and making sure they are kept in safe, loving homes.</p>
+                            <p>These pets that you viewed above were in desperate need of affection and care. Luckily, they were brought into our Home For Best Friends shelter. We, the team at Home For Best Friends, are dedicated to helping vulnerable animals and making sure they are kept in safe, loving homes.</p>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!--Meet our Team-->
-            <div class="meetOurTeam" id="meetOurTeam" width="100%">
-                <h2>MEET OUR TEAM</h2>
-                <h5 style="padding: 10px; color: white">Meet the people that make Home For Best Friends such an amazing animal shelter!</h5>
-                <div class="row" style="padding: 20px">
-                    <div class="col-lg-3 wow flipInY" data-wow-delay="0.5s">
-                        <center>
-                            <img src="https://images.ecosia.org/ysEyaXMTN48pVe_nf0vo0jSykbI=/0x390/smart/http%3A%2F%2Fwww.carmelstudiosphotography.com%2Fwp-content%2Fgallery%2Fprofessional-headshots%2FProfessional-Headshot-9.jpg" width="320px" height="280px">
-                            <h4>ALINA JOHNSON - FOUNDER</h4>
-                            <p>Alina always had a passion for pets. After finding a wounded dog in the street while walking home one day, Alina vowed to give stray pets a safe home. She opened up the Home For Best Friends Dog Shelter in 2010 with her best friend, Jasmine.</p>
-                            <a><i class="fab fa-facebook-f"></i></a>
-                            <a><i class="fab fa-linkedin-in"></i></a>
-                            <a><i class="fab fa-twitter"></i></a>
-                        </center>
-                    </div>
-                    <div class="col-lg-3 wow flipInY" data-wow-delay="0.9s">
-                        <center><img src="https://www.proheadshots.ca/wp-content/uploads/2016/03/white-background-headshots-woman.jpg" width="320px" height="280px">
-                            <h4>JASMINE CHEN - MANAGER</h4>
-                            <p>Jasmine, also a pet-lover, met Alina in high school. They always wanted to open a pet shelter together, and she wanted to become a leader as an adult. She found her dream job when Alina invited her to work at the Home For Best Friends Dog shelter.</p>
-                            <a><i class="fab fa-facebook-f"></i></a>
-                            <a><i class="fab fa-linkedin-in"></i></a>
-                            <a><i class="fab fa-twitter"></i></a>
-                        </center>
-                    </div>
-                    <div class="col-lg-3 wow flipInY" data-wow-delay="1.3s">
-                        <center><img src="https://images.ecosia.org/U8yxsFVgLCfvGFhSeS-xtVZGW24=/0x390/smart/http%3A%2F%2Fwww.lukestudios.com%2Fwp-content%2Fuploads%2F2017%2F12%2FCorporate-Headshots-Minnesota-Minneapolis-790x1024.jpg" width="320px" height="280px">
-                            <h4>JULIUS LUSTER - CARE TAKER</h4>
-                            <p>When Julius was a little boy, his family owned 10 cats and dogs. He always took care of each of them- he bathed them, fed them, and walked them. After seeing his love for animals, Alina swiftly made him an addition to the Home For Best Friends team in 2013. </p>
-                            <a></a><i class="fab fa-facebook-f"></i></a>
-                            <a><i class="fab fa-linkedin-in"></i></a>
-                            <a><i class="fab fa-twitter"></i></a>
-                        </center>
-                    </div>
-                    <div class="col-lg-3 wow flipInY" data-wow-delay="1.7s">
-                        <center><img src="https://images.ecosia.org/4mKQeB5WCvk7Wj6SNV9yjkn0Q0c=/0x390/smart/http%3A%2F%2Fwww.eikonphoto.com%2Fwp-content%2Fuploads%2F2017%2F03%2Fprofessional-headshots-men-e1515784407323.jpg" width="320px" height="280px">
-                            <h4>ALEX SINGH - VETERINARIAN</h4>
-                            <p>Ever since he was a little boy, Alex always knew that he wanted to be a doctor. He went to medical school, but later realized that his medical training would be best applied to helping dogs. Thus, he joined the Home For Best Friends Team in 2015. </p>
-                            <a><i class="fab fa-facebook-f"></i></a>
-                            <a><i class="fab fa-linkedin-in"></i></a>
-                            <a><i class="fab fa-twitter"></i></a>
-                        </center>
-                    </div>
-                </div>
-            </div>
-            <!--End MeetOurTeam-->
             
-            <!--Partners-->
-            <div class="partners" id="partners" height="100%" width="100%">
-                <h2>OUR PARTNERS</h2>
-                <p style="text-align: center; font-family: 'Open Sans Condensed', sans-serif; font-size: 25px">These 4 companies have been with us since the very beginning. A big thank you goes to all of them!</p>
-                <div class="row">
-                    <div class="col-lg-6 wow zoomInLeft" data-wow-delay="0.2s" style="padding-left:150px">
-                        <center>
-                            <div class="panel panel-default text-center">
-                                <div class="panel-head">
-                                    <h4>THE HONEST KITCHEN</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <img src="https://images.ecosia.org/6XihvqferE8Hxa3qeKKNq-NjbjM=/0x390/smart/http%3A%2F%2Fwww.raininghotcoupons.com%2Fwp-content%2Fuploads%2F2013%2F05%2Fhonestkitch.jpg" height="190px">
-                                    <center><p style="color: #333333; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Thank you very much, The Honest Kitchen, for providing us with human-grade pet food that's delicious and nutritous for our pets!</p></center>
-                                </div>
-                                <div class="panel-footer">
-                                    <center><a href="https://www.thehonestkitchen.com/?msclkid=d69b3c02565016664d2067f6f8980d61&utm_source=bing&utm_medium=cpc&utm_campaign=CPCS%20-%20Trademark%20-%20Desktop%2FTablet&utm_term=the%20honest%20kitchen&utm_content=THK"><button class="btn btn-outline-primary" id="theHonestKitchenButton" aria-presed="true" >The Honest Kitchen</button></a></center>
-                                </div>
-                            </div>
-                        </center>
-                    </div>
-                    <div class="col-lg-6 wow zoomInRight" data-wow-delay="0.8s" style="padding-right:150px">
-                        <center>
-                            <div class="panel panel-default text-center">
-                                <div class="panel-head">
-                                    <h4>VET ON DEMAND</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <img src="https://images.ecosia.org/ehIjWQOvU9OKbnO7Gyd_RfuT3II=/0x390/smart/http%3A%2F%2Fwww.feirox.com%2Frivu%2F2016%2F01%2FVet-On-Demand-2.png" height="220px">
-                                    <center><p style="color: #333333; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">We are so grateful to the veterinary services that Vet On Demand provides to us!</p></center>
-                                </div>
-                                <div class="panel-footer">
-                                    <center><a href="https://angel.co/vetondemand"><button class="btn btn-outline-primary" aria-presed="true" id="vetOnDemandButton">Vet On Demand</button></a></center>
-                                </div>
-                            </div>
-                        </center>
-                    </div>
-                </div>
-                <div class="row" style="padding: 70px 0 0 0">
-                    <div class="col-md-6 wow zoomInLeft" data-wow-delay="0.2s" style="padding-left:150px">
-                        <center>
-                            <div class="panel panel-default text-center">
-                                <div class="panel-head">
-                                    <h4>SWIFTO</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <img src="https://images.ecosia.org/3SedaLek3sBP-PeAj6CixMgYSts=/0x390/smart/http%3A%2F%2Fwww.sfdogwalker.com%2Fimages%2Fimg%2FSwifto-logo.jpg" height="220px">
-                                    <center><p style="color: #333333; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">We're very thankful to Swifto for the walking services that they provide for our dogs!</p></center>
-                                </div>
-                                <div class="panel-footer">
-                                    <center><a href="https://www.swifto.com"><button class="btn btn-outline-primary" aria-presed="true"  id="swiftoButton">Swifto</button></a></center>
-                                </div>
-                            </div>
-                        </center>
-                    </div>
-                    <div class="col-lg-6 wow zoomInRight" data-wow-delay="0.8s" style="padding-right:150px">
-                        <center>
-                            <div class="panel panel-default text-center">
-                                <div class="panel-head">
-                                    <h4>PETSMART</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <img src="https://images.ecosia.org/-yXt4IeBq4wcmyr7g5xkPLU9FP4=/0x390/smart/http%3A%2F%2Fwww.theblackfridaycoupons.com%2Fwp-content%2Fuploads%2F2015%2F08%2FPetsmart-Black-Friday-Deals-Sales-Ads.jpg" height="220px">
-                                    <center><p style="color: #333333; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Thank you so much, PetSmart, for funding our projects to bring in more stray pets!</p></center>
-                                </div>
-                                <div class="panel-footer">
-                                    <center><a href="https://www.petsmart.com/?utm_source=bing&utm_medium=cpc&utm_term=pet%20mark%7C412%7C634961%7C77309474456730&utm_content=Misspellings%253ECore%253EExact&utm_campaign=US_Enterprise_Search_Near%3EBrand_PetSmart_DT_nv&msclkid=b7f19c1e2270171e324cc7eae6435be3&utm_source=bing&utm_medium=cpc&utm_campaign=US_Enterprise_Search_Near%3EBrand_PetSmart_DT_nv&utm_term=pet%20mark&utm_content=Misspellings%3ECore%3EExact"><button class="btn btn-outline-primary" id="petSmartButton" aria-presed="true">PetSmart</button></a></center>
-                                </div>
-                            </div>
-                        </center>
-                    </div>
-                </div>
-            </div>  
-            <div class="justToPad" style="padding: 60px 0 5px 0"></div>
-            <!--End Partners-->
-            <hr>
             <!--Statistics-->
-            <div class="statistics" id="statistics" style="padding: 65px 0 170px 0">
+            <div class="statistics" id="statistics" style="padding: 73px 0 170px 40px">
                 <center>
                     <h2>STATISTICS</h2>
-                    <h4>With all of the services that shown above that we provide, we are able to save more pets each year. Take a look at our statistics for 2017.</h4>
+                    <h4 style="padding: 0 50px 0 50px">With all of the services that shown above that we provide, we are able to save more pets each year. Take a look at our statistics for 2017.</h4>
                 </center>
                 <div id="chartContainer" style="height: 300px; width: 95%; padding: 65px 10px 0 10px; color: yellow"></div>
                     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
@@ -281,73 +172,114 @@ chart.render();
                 </div>
             </div>
         <!--End Stats-->
-            
-            
-            
-            <!--Shop-->
-            <div class="shop" id="shop">
-                
-            </div>
-
-            
-            <!--Events-->
-            <div class="events">
-                <!--<iframe width=900px height=300px src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTXFCXPaRI8NObxLEoFs3C1icLNyQbp893tN9HN3akkPn-Glqzlc93PGbE19ND-Shy_OlqqcU8OmBVW/pubhtml?widget=true&amp;headers=false"></iframe>-->
-            </div>
-            <!--Lost and Found Animals-->
-            <div class="lost" id="lost">
-                
+        <hr>    
+        <!--Services-->
+        <div class="services" id="services" style="padding-top: 60px !important; padding-bottom: 190px">
+            <center>
+                <h2 style="padding-top: 10px">OUR SERVICES</h2>
+                <hr width="95%">
+            </center>
+            <div class="row" style="padding: 40px">
+                <div class="col-lg-4 col-md-4 col-sm-4 wow zoomInLeft">
+                    <div class="animalRescue">
+                        <center>
+                            <div class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    <h4>ANIMAL RESCUE</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <img src="https://r.hswstatic.com/u_0/w_480/gif/animal-rescue-organizations-1.jpg">
+                                </div>
+                                <div class="panel-footer">
+                                     <p style="font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">We send out rescue teams searching for stray pets. Our emergency medical team ensures the surivival of these pets.</p>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow slideInDown">
+                    <div class="animalPlacement">
+                        <center>
+                            <div class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    <h4>ANIMAL PLACEMENT</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <img src="lady.jpg">
+                                </div>
+                                <div class="panel-footer">
+                                     <p style="font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">These pets have been emotionally scarred. We strive to put every pet that we rescue into a safe and loving home.</p>
+                                </div>
+                            </div> 
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow zoomInRight">
+                    <div class="animalProtection">
+                        <center>
+                            <div class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    <h4>ANIMAL PROTECTION</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <img src="https://d31j74p4lpxrfp.cloudfront.net/sites/default/files/int_files/int_maps/int_home_do_noy_use_1008453_1.jpg" >
+                                </div>
+                                <div class="panel-footer">
+                                     <p style="font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">In addition to pet companies, we have partnered with law enforcement agencies to prevent animal abuse.</p>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--End Services-->
        
-        
-
-        <!--End of Contact-->
-        
+       
         <!--Footer & Contact (More Information)-->
-        <div class="footer" id="footer">
+        <div class="footer" id="footer" style="padding: 35px !important">
             <div class="row">
-                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
+                <div class="col-lg-4 col-md-4 wow slideInUp">
                     <h2>CONTACT US</h2>
                     <center>
                         <form class="donateForm">
-                            <div style="padding: 0 0 10px 0">
+                            <div style="padding: 0 0 10px 0" data-wow-delay="0.05s">
                                 <input style="text-align: center; width: 400px" type="text" name="email" placeholder="E-MAIL">
                             </div>
                             <div style="padding: 0 0 10px 0">
-                                <input style="text-align: center; width: 200px; border-radius: 1%;" type="text" name="name" placeholder="NAME">
-                                <input style="text-align: center; width: 200px; border-radius: 1%" type="text" name="phoneNumber" placeholder="PHONE NUMBER"> 
+                                <input style="text-align: center; width: 150px" type="text" name="name" placeholder="NAME">
+                                <input style="text-align: center; width: 150px" type="text" name="phoneNumber" placeholder="PHONE NUMBER"> 
                             </div>
                             <textarea id="feedback" name="feedback" placeholder="Please write any feedback that you have here..." style="height:200px; width: 400px"></textarea>
-                            <div style="padding: 0 0 10px 0">
-                                <a href="#footer"><button onclick="alertFunction()" class="btn btn-primary" style="width: 400px">SUBMIT</button></a>
+                            <div style="padding: 0 0 10px 0"></a>
+                                <button onclick="alertFunction()" class="btn btn-primary" style="width: 400px">SUBMIT</button>
                             </div>
                         </form>
                     </center>
                 </div>
-                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
+                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.05s">
                     <div class="iconsForFooter" style="padding-left: 55px 0 50px 0">
-                        <h2>EXTRA INFOMATION</h2>
-                            <p style="padding: 10px 0 6px"><i class="fa fa-home"></i>Po Box 176 New York, NY, 11221</p>
-                            <p style="padding: 10px 0 6px"><i class="fa fa-envelope"></i>HFBF@gmail.com</p>
-                            <p style="padding: 10px 0 6px"><i class="fa fa-phone"></i>(212) 546 - 6546</p>
-                            <p style="padding: 10px 0 6px"><i class="fas fa-hand-paper"></i>Privacy</p>
-                            <p style="padding: 10px 0 0px"><i class="fas fa-scroll"></i>Terms and Conditions</p>
+                        <h2>INFORMATION</h2>
+                            <p style="padding: 6px 0 3px"><i class="fa fa-home"></i>Po Box 176 New York, NY, 11221</p>
+                            <p style="padding: 6px 0 3px"><i class="fa fa-envelope"></i>HFBF@gmail.com</p>
+                            <p style="padding: 6px 0 3px"><i class="fa fa-phone"></i>(212) 546 - 6546</p>
+                            <p style="padding: 6px 0 3px"><i class="fas fa-hand-paper"></i>Privacy</p>
+                            <p style="padding: 6px 0 0px"><i class="fas fa-scroll"></i>Terms and Conditions</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
+                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.05s">
                     <div class="followUp">
                         <h2>CONNECT WITH US</h2>
-                        <p>Subscribe to our monthly newsletter here!</p>
-                        <div style="padding: 0 0 10px 0">
+                        <div style="padding: 60px 0 5px 0">
+                            <p>Subscribe to our monthly newsletter here!</p>
                             <input style="text-align: center; width: 400px; text-align: center" type="text" name="email" placeholder="E-MAIL">
                         </div>
                         <button onclick="alert('Thank you for signing up for our daily newsletter!')" class="btn btn-primary" id="footerButton" style="width: 400px">SUBMIT</button>
-                        <p>You can also find us on these social media networks</p>
-                        <a href="https://www.facebook.com/Home-For-Best-Friends-2204712393101351/?modal=admin_todo_tour"><i class="fab fa-facebook-f"></i></a>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
+                        <div style="padding-top: 60px">
+                            <p>You can also find us on these social media networks</p>
+                            <a href="https://www.facebook.com/Home-For-Best-Friends-2204712393101351/?modal=admin_todo_tour"><i class="fab fa-facebook-f"></i></a>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                        </div>
                     </div>
                 </div>
             </div> 
