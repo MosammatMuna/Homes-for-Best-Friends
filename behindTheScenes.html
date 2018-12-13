@@ -37,16 +37,14 @@
 
     <style>
     /*NAVBAR*/
-        #nav  a  {
-            color: #1a1a1a;
-            text-align: left;
-            padding: 0 10px 0 0;
-        }
-        #nav  a:hover {
-            transition: all 300ms ease-in-out;
-            color: #1a1a1a;
-            background-color: #ff00d7;
-        }
+    .navbar {
+        box-shadow: 0px 0 5px 0px #888;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 38px;
+    }
+        
         #Nav  a  {
             color: #1a1a1a;
             text-align: left;
@@ -54,12 +52,11 @@
         #Nav  a:hover {
             transition: all 300ms ease-in-out;
             color: #1a1a1a;
-            background-color: #ff00d7;
+            background-color: #82A0BC !important;
         }    
         .dropdown-content {
             position: absolute !important;
             background-color: gray;
-            width: 220px !important;
         }
         .dropdown-content a {
             text-align: center !important;
@@ -72,11 +69,18 @@
         }
         /*END NAVBAR*/
         
-        /*SERVICES PANELS*/
+        /*PANELS*/
+        .panel .btn {
+            background-color: #F78A6F !important;
+            border-color: transparent !important;
+        }
+        .panel .btn:hover {
+            background-color: #80bfff !important;
+        }
         .panel {
             width: 400px;
             margin: 40px;
-            border-style: solid;
+            border: 1px solid #82A0BC;
             border-radius: 1%;
         }
 
@@ -87,8 +91,9 @@
 
         .panel-head h4 {
             color: white;
-            font-size: 40px;
+            font-size: 30px;
             text-align: center;
+            font-weight: normal;
         }
         .panel-body {
             padding: 0 0 10px 0;
@@ -161,15 +166,16 @@
     padding: 5px;
     font-size: 30px;
     border-radius: 50%;
-    background-color: #ff00d7;
+    background-color: #F78A6F !important;
     color: white;
 }
 
 .meetOurTeam i:hover {
+    transition: all 300ms ease-in-out;
     height: 60px;
     width: 60px;
     padding: 15px;
-    background-color: #80bfff;
+    background-color: #80bfff !important;
 }
 .meetOurTeam h4 {
     font-size: 21px;
@@ -197,12 +203,13 @@
 .iconsForFooter i {
     height: 40px;
     width: 40px;
-    color: #ff00d7;
+    color: #F78A6F;
     padding: 0 0 15px 0;
 }
 .footer .btn {
-    background-color: #ff00d7;
+    background-color: #F78A6F;
     color: black;
+    border-color: transparent;
 }
 
 .footer .btn:hover {
@@ -216,7 +223,7 @@
     padding: 5px;
     font-size: 30px;
     border-radius: 50%;
-    background-color: #ff00d7;
+    background-color: #F78A6F;
     color: white;
 }
  .followUp i:hover {
@@ -225,17 +232,7 @@
     padding: 15px;
     background-color: #80bfff;
  }   
-    /*BUTTONS*/
-    .btn {
-        background-color: #ff00d7;
-        color: black;
-    }
-    .btn:hover {
-        background-color: #80bfff;
-        color: white;
-        
 
-    }
  
  
     </style>
@@ -249,7 +246,7 @@
     
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-            <div id="nav">
+            <div class="navbarBigButton">
                 <a class="navbar-brand" href="index.html" style="font-size: 30px">Homes For Best Friends</a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
@@ -258,19 +255,33 @@
             <div class="collapse navbar-collapse" id="Nav">
                 <ul class="navbar-nav ml-auto">
                     <li>
-                        <a class="nav-link" href="index.html #aboutUs">About Us</a>
-                    </li>
-                    <li class="nav-item">
                         <div class="dropdown">
-                            <a class="nav-link" href="#behindTheScenes">Behind The Scenes<i class="fas fa-caret-down"></i></a>
-                            <div class="dropdown-content">
-                                <a class="nav-link" href="#meetOurTeam">Our Team</a>
-                                <a class="nav-link" href="#partners">Our Partners</a>
+                            <a class="nav-link" href="index.html #aboutUs">About Us<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content" style="width: 220px !important">
+                                <a class="nav-link" href="index.html #missionStatement">Mission Statement</a>
+                                <a class="nav-link" href="index.html #statistics">Statistics</a>
+                                <a class="nav-link" href="index.html #services">Our Services</a>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="getInvolved.html">Get Involved</a>
+                        <div class="dropdown">
+                            <a class="nav-link" href="behindTheScenes.html">Behind The Scenes<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content" style="width: 220px !important">
+                                <a class="nav-link" href="#meetOurTeam">Our Team</a> 
+                                <a class="nav-link" href="#partners">Our Partners</a> 
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" href="getInvolved.html">Get Involved<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content" style="width: 160px !important">
+                                <a class="nav-link" href="getInvolved.html #volunteer">Volunteer</a>
+                                <a class="nav-link" href="getInvolved.html #adopt">Adopt</a>
+                                <a class="nav-link" href="getInvolved.html #otherGetInvolvedWays">Other Ways</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -280,19 +291,19 @@
         <!--Beind the Scenes-->
         <div class="behindTheScenes" id="behindTheScenes" style="padding: 60px 0 150px 0">
             <center>
-                <h2 style="font-size: 40px">BEHIND THE SCENES</h2>
-                <h4>Get to know why Homes For Best friends runs with ease!</h4>
+                <h2 style="font-size: 45px !important; padding-top: 20px">BEHIND THE SCENES</h2>
+                <h4>Get to know why Homes For Best Friends runs with ease!</h4>
             </center>
             
             <!--Meet our Team-->
             <div class="meetOurTeam" id="meetOurTeam" width="100%">
                 <h2>OUR TEAM</h2>
-                <h5 style="padding: 10px; color: black">Meet the people that make Home For Best Friends such an amazing animal shelter!</h5>
+                <h5 style="padding: 10px; color: black">Meet the people that make Homes For Best Friends such an amazing animal shelter!</h5>
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
                         <div class="teamPhoto" style="background-image:url(https://images.ecosia.org/ysEyaXMTN48pVe_nf0vo0jSykbI=/0x390/smart/http%3A%2F%2Fwww.carmelstudiosphotography.com%2Fwp-content%2Fgallery%2Fprofessional-headshots%2FProfessional-Headshot-9.jpg)"
                         data-text="ALINA WICKLIBICK - FOUNDER
-                        Alina Wicklibick's passion for animals led her to found the Homes For Best Friends Pet Shelter in 2010.">
+                        Alina Johnson's passion for animals led her to found the Homes For Best Friends Pet Shelter in 2010.">
                         </div>
                         <center style="padding-top: 10px">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -302,7 +313,7 @@
                         </center>    
                     </div>
                     <div class="col-lg-3 col-md-3">
-                        <div class="teamPhoto" style="background-image:url(http://kimcarpenterblog.com/wp-content/uploads/2017/12/dd.jpg)"
+                        <div class="teamPhoto" style="background-image:url(jasmine.jpg)"
                         data-text="JASMINE SMITH - MANAGER
                         Jasmine Smith oversees the pet shelter operations on a daily basis.">
                         </div>
@@ -345,7 +356,6 @@
             <div class="partners" id="partners" height="100%" width="100%">
                 <h2>OUR PARTNERS</h2>
                 <p style="text-align: center; font-family: 'Open Sans Condensed', sans-serif; font-size: 25px">These 4 companies have been with us since the very beginning. A big thank you goes to all of them!</p>
-                <hr width="70%">
                 <div class="row">
                     <div class="col-lg-6 col-xs-12 wow zoomInLeft" data-wow-delay="0.2s" style="padding-left:150px">
                         <center>
@@ -354,7 +364,7 @@
                                     <h4>THE HONEST KITCHEN</h4>
                                 </div>
                                 <div class="panel-body">
-                                    <img src="https://images.ecosia.org/6XihvqferE8Hxa3qeKKNq-NjbjM=/0x390/smart/http%3A%2F%2Fwww.raininghotcoupons.com%2Fwp-content%2Fuploads%2F2013%2F05%2Fhonestkitch.jpg" height="190px">
+                                    <img src="https://images.ecosia.org/6XihvqferE8Hxa3qeKKNq-NjbjM=/0x390/smart/http%3A%2F%2Fwww.raininghotcoupons.com%2Fwp-content%2Fuploads%2F2013%2F05%2Fhonestkitch.jpg" style="height: 250px !important; width:220px !important;">
                                     <center><p style="color: #333333; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Thank you, The Honest Kitchen, for providing our pets with tasty, human-grade food.</p></center>
                                 </div>
                                 <div class="panel-footer">
@@ -388,7 +398,7 @@
                                     <h4>SWIFTO</h4>
                                 </div>
                                 <div class="panel-body">
-                                    <img src="https://images.ecosia.org/3SedaLek3sBP-PeAj6CixMgYSts=/0x390/smart/http%3A%2F%2Fwww.sfdogwalker.com%2Fimages%2Fimg%2FSwifto-logo.jpg" height="220px">
+                                    <img src="https://images.ecosia.org/3SedaLek3sBP-PeAj6CixMgYSts=/0x390/smart/http%3A%2F%2Fwww.sfdogwalker.com%2Fimages%2Fimg%2FSwifto-logo.jpg" style="height:220px !important; width:260px;">
                                     <center><p style="color: #333333; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">We're very thankful to Swifto for the walking services that they provide for our dogs!</p></center>
                                 </div>
                                 <div class="panel-footer">
@@ -404,7 +414,7 @@
                                     <h4>PETSMART</h4>
                                 </div>
                                 <div class="panel-body">
-                                    <img src="https://images.ecosia.org/-yXt4IeBq4wcmyr7g5xkPLU9FP4=/0x390/smart/http%3A%2F%2Fwww.theblackfridaycoupons.com%2Fwp-content%2Fuploads%2F2015%2F08%2FPetsmart-Black-Friday-Deals-Sales-Ads.jpg" height="220px" style="width: 300px !important">
+                                    <img src="https://images.ecosia.org/-yXt4IeBq4wcmyr7g5xkPLU9FP4=/0x390/smart/http%3A%2F%2Fwww.theblackfridaycoupons.com%2Fwp-content%2Fuploads%2F2015%2F08%2FPetsmart-Black-Friday-Deals-Sales-Ads.jpg" style="height:220px !important; width: 350px !important;">
                                     <center><p style="color: #333333; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Thank you so much, PetSmart, for funding our projects to bring in more stray pets!</p></center>
                                 </div>
                                 <div class="panel-footer">
@@ -427,25 +437,24 @@
         <!--Footer & Contact (More Information)-->
         <div class="footer" id="footer" style="padding: 35px !important">
             <div class="row">
-                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
+                <div class="col-lg-4 col-md-4 wow slideInUp">
                     <h2>CONTACT US</h2>
                     <center>
                         <form class="donateForm">
-                            <div style="padding: 0 0 10px 0">
+                            <div style="padding: 0 0 10px 0" data-wow-delay="0.05s">
                                 <input style="text-align: center; width: 400px" type="text" name="email" placeholder="E-MAIL">
                             </div>
                             <div style="padding: 0 0 10px 0">
-                                <input style="text-align: center; width: 150px" type="text" name="name" placeholder="NAME">
-                                <input style="text-align: center; width: 150px" type="text" name="phoneNumber" placeholder="PHONE NUMBER"> 
+                                <input style="text-align: center; width: 400px" type="text" name="name" placeholder="FIRST AND LAST NAME">
                             </div>
                             <textarea id="feedback" name="feedback" placeholder="Please write any feedback that you have here..." style="height:200px; width: 400px"></textarea>
                             <div style="padding: 0 0 10px 0">
-                                <a href="#footer"><button onclick="alertFunction()" class="btn btn-primary" style="width: 400px">SUBMIT</button></a>
+                                <button onclick="alertFunction()</a>" class="btn btn-primary" style="width: 400px">SUBMIT</button>
                             </div>
                         </form>
                     </center>
                 </div>
-                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
+                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.05s">
                     <div class="iconsForFooter" style="padding-left: 55px 0 50px 0">
                         <h2>INFORMATION</h2>
                             <p style="padding: 6px 0 3px"><i class="fa fa-home"></i>Po Box 176 New York, NY, 11221</p>
@@ -455,7 +464,7 @@
                             <p style="padding: 6px 0 0px"><i class="fas fa-scroll"></i>Terms and Conditions</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
+                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.05s">
                     <div class="followUp">
                         <h2>CONNECT WITH US</h2>
                         <div style="padding: 60px 0 5px 0">
@@ -473,6 +482,8 @@
                 </div>
             </div> 
         </div>
+                   
+        <!--End of Footer-->
         
     </body> 
 </html>

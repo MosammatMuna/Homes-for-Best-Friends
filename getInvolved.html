@@ -37,6 +37,15 @@
 
 
     <style>
+    h2 {
+        font-weight: bold;
+        font-size: 38px;
+    }
+    h4 {
+        font-size: 30px;
+        color: #80bfff;
+        font-weight: normal;
+    }
     html {
         scroll-behavior: smooth;
     }
@@ -58,16 +67,6 @@
     }
     
     /*NAVBAR*/
-    #nav  a  {
-        color: #1a1a1a;
-        text-align: center;
-    }
-    
-    #nav  a:hover {
-        transition: all 300ms ease-in-out;
-        color: #1a1a1a;
-        background-color: #ff00d7;
-    }
     
     #Nav  a  {
         color: #1a1a1a;
@@ -101,16 +100,7 @@
     /*END VOLUNTEER*/
     
     
-    /*BUTTON*/
-    .btn {
-        background-color: #ff00d7;
-        color: black;
-    }
-    .btn:hover {
-        background-color: #80bfff;
-        color: white;
-    }
-    /*END BUTTON*/
+    
     
     .payHere {
         padding: 0 0 5px 5px;
@@ -147,24 +137,54 @@
         padding: 70px 0 0 0;
     }
     /*VOLUNTEER PANEL GROUP*/
-    .panel-group {
-        padding-top: 22px;
+     .btn{
+        background-color: #F78A6F;
+        border-color: transparent !important;
     }
+     .btn:hover{
+        background-color: #80bfff;
+    }
+    .panel {
+        border: 1px solid #82A0BC;
+        border-radius: 1%;
+    }
+
     .panel-heading {
-        font-size: 30px !important;
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+        background-color: #80bfff;
+        font-family: 'Open Sans Condensed', sans-serif;
+        height: 60px;
+    }    
+
+    .panel-heading h4 {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
     }
-    .panel-body {
+    .panel-body img{
+        width: 400px !important;
+        height: 350px !important;
+        padding: 10px;
+    }
+
+    .panel p {
+        padding: 15px;   
         color: black;
-        font-size: 20px;
-        padding: 15px;
+        font-weight: normal;
+    }
+
+    .panel-footer {
+        border-bottom-right-radius: 2%;
+        border-bottom-left-radius: 2%;
+        padding: 10px 0 10px 0;
+        background-color: #cccccc;
     }
     
     
     /*FOOTER*/
-    .footer {
-        background-color: #1a1a1a;
-        text-align: center !important;
-    }
+   
     .footer p {
         color: white;
         font-weight: bold;
@@ -172,16 +192,17 @@
     }
     .footer {
         padding: 30px !important;
+        text-align: center !important;
         background-color: #333333;
     }
     .iconsForFooter i {
         height: 40px;
         width: 40px;
-        color: #ff00d7;
+        color: #F78A6F;
         padding: 0 0 15px 0;
     }
     .footer .btn {
-        background-color: #ff00d7;
+        background-color: #F78A6F;
         color: black;
     }
 
@@ -196,7 +217,7 @@
         padding: 5px;
         font-size: 30px;
         border-radius: 50%;
-        background-color: #ff00d7;
+        background-color: #F78A6F;
         color: white;
     }
     
@@ -227,11 +248,10 @@
         transition: opacity 1.0s;
         
     }
-
     /* Mouse-over effects */
     .slider:hover {
         opacity: 1; /* Fully shown on mouse-over */
-        background-color: #ff00d7;
+        background-color: #F78A6F;
     }
 
     /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
@@ -250,6 +270,9 @@
         background: #4CAF50; /* Green background */
         cursor: pointer; /* Cursor on hover */
     }
+    .otherGetInvolvedWays {
+        background-color: #e6e6e6;
+    }
     </style>
     
     
@@ -261,7 +284,7 @@
     
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-            <div id="nav">
+            <div class="navbarBigButton">
                 <a class="navbar-brand" href="index.html" style="font-size: 30px">Homes For Best Friends</a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
@@ -270,21 +293,34 @@
             <div class="collapse navbar-collapse" id="Nav">
                 <ul class="navbar-nav ml-auto">
                     <li>
-                        <a class="nav-link" href="index.html #aboutUs">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="behindTheScenes.html">Behind The Scenes</a>
-                    </li>
-                    <li class="nav-item">
-                            <div class="dropdown">
-                                <a class="nav-link" href="#getInvolved">Get Involved<i class="fas fa-caret-down"></i></a>
-                                <div class="dropdown-content">
-                                    <a style="color: black; text-align: left; text-decoration: none" href="#volunteer">Volunteer</a>
-                                    <a style="color: black; text-align: left; text-decoration: none" href="#adopt">Adopt</a>
-                                    <a style="color: black: text-align: left; text-decoration: none" href="#otherGetInvolvedWays">Other Ways</a>
-                                </div>
+                        <div class="dropdown">
+                            <a class="nav-link" href="index.html #aboutUs">About Us<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content" style="width: 220px !important">
+                                <a class="nav-link" href="index.html #missionStatement">Mission Statement</a>
+                                <a class="nav-link" href="index.html #statistics">Statistics</a>
+                                <a class="nav-link" href="index.html #services">Our Services</a>
                             </div>
-                        </li>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" href="behindTheScenes.html">Behind The Scenes<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content" style="width: 220px !important">
+                                <a class="nav-link" href="behindTheScenes.html #meetOurTeam">Our Team</a> 
+                                <a class="nav-link" href="behindTheScenes.html #partners">Our Partners</a> 
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" href="getInvolved.html">Get Involved<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content" style="width: 160px !important">
+                                <a class="nav-link" href="#volunteer">Volunteer</a>
+                                <a class="nav-link" href="#adopt">Adopt</a>
+                                <a class="nav-link" href="#otherGetInvolvedWays">Other Ways</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -294,70 +330,89 @@
             <div class="getInvolved" id="getInvolved">
                 <center>
                     <h2 style="font-size: 40px">GET INVOLVED</h2>
-                    <h4>Help us out by joining our community!</h4>
+                    <h4 style="color: black">Help us out by joining our community!</h4>
                 </center>
                 <div class="row" id="volunteer">
                     <div class="col-lg-12 col-md-12">
                         <center>
-                            <h2 style="font-size: 35px; padding-top: 70px">VOLUNTEER</h2>
-                            <h4 style="color: black; padding: 0 200px 0 200px">Volunteers are the backbone of Home For Best Friends, and without their time, talents, and resources, we would not be able to perform our daily operations and save the lives of many pets.</h4>
+                            <h2 style="font-size: 35px; padding: 80px 0 0 0">VOLUNTEER AT OUR SHELTER</h2>
                         </center>
                     </div>
-                    <div class="col lg-12 col-md-12">
-                        <center>
-                            <div class="list">
-                                <div class="container">
-                                    <div class="panel-group" style="text-align: center">
-                                        <div class="panel">
-                                            <div class="panel-heading">ANIMAL CARE</div>
-                                            <div class="panel-body">Help the shelter out by taking care of the pets. This includes feeding, cleaning, and walking them.</div>
-                                        </div>
-                                        <br>
-                                        <div class="panel">
-                                            <div class="panel-heading">DATA ENTRY</div>
-                                            <div class="panel-body">Help the shelter out by entering data into our customized applications.</div>
-                                        </div>
-                                        <br>
-                                        <div class="panel"> 
-                                            <div class="panel-heading">RECEPTION</div>
-                                            <div class="panel-body">Front Desk Coverage involves answering phones, and greeting shelter guests.</div>
-                                        </div>
-                                        <br>
-                                        <div class="panel">
-                                            <div class="panel-heading">SEARCH AND RESCUE</div>
-                                            <div class="panel-body">Join us in finding pets in the streets, and bringing them into our shelter.</div>
-                                        </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow slideInUp" data-wow-delay="0.1s">
+                        <div class="volunteerServices" style="padding-left: 20px !important">
+                            <center>
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <h4>ANIMAL CARE</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <img src="animalcare.jpg">
+                                    </div>
+                                    <div class="panel-footer">
+                                         <p style="font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Help the shelter out by taking care of the pets. This includes feeding them, cleaning them, walking them, and playing with them.</p>
                                     </div>
                                 </div>
-                             </div>
-                         </center>
-                         <br>
-                         <div>
-                            <center>
-                                 <a href="volunteerPage.html"><button class="btn btn-primary" type="button" aria-presed="true">Volunteer Here</button></a>
                             </center>
-                         </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow slideInUp" data-wow-delay="0.2s">
+                        <div class="volunteerServices">
+                            <center>
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <h4>DATA ENTRY</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <img src="paperwork.jpg">
+                                    </div>
+                                    <div class="panel-footer">
+                                         <p style="font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Help the shelter out by entering data into our customized database such as the amount of pets rescued in 2017.</p>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                        <div style="padding-top: 15px">
+                            <center>
+                                <a href="volunteerPage.html"><button class="btn btn-primary" type="button">Volunteer Here</button></a>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow slideInUp" data-wow-delay="0.3s">
+                        <div class="volunteerServices" style="padding-right: 20px !important">
+                            <center>
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <h4>SEARCH AND RESCUE</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <img src="rescue.jpg">
+                                    </div>
+                                    <div class="panel-footer">
+                                         <p style="font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Join us in finding pets in the streets that are in need of desperate care and affection, and bringing them into our shelter.</p>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
                     </div>
                 </div>
             </div>
         <!--End Volunteer-->
 
         <!--Adopt-->
-        <div class="adopt" id="adopt" style="padding: 68px 35px 10px 0">
+        <div class="adopt" id="adopt" style="padding: 80px 35px 25px 0">
             <h2 style="text-align: center; font-size: 35px"x>ADOPT OUR PETS</h2>
-            <hr width="95%">
             <div class="row" style="padding-left: 22px">
                 <div class="col-lg-4 col-md-4 wow slideInLeft">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
                             <h4>COCOA</h4>
                         </div>
-                        <div class="panel-body">
-                            <img src="https://www.akc.org/wp-content/themes/akc/component-library/assets//img/welcome.jpg" style="height: 330px; width: 350px">
-                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Cocoa is a 10 year old brown-white German Sheperd. His favorite food is chicken, and he sure does love to play!</p>
+                        <div class="panel-body"> 
+                            <img src="https://www.akc.org/wp-content/themes/akc/component-library/assets//img/welcome.jpg" style="height: 325px !important; width: 370px !important; padding: 25px 20px 0 0">
+                            <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px; padding-top: 20px">Cocoa is a 10 year old brown-white German Sheperd. His favorite food is chicken, and he sure does love to play!</p>
                         </div>
                         <div class="panel-footer">
-                            <center><a href="adoptpet1.html"><button class="btn btn-primary">SEE MORE</button></a></center>
+                            <center><a href="adoptpet1.html"><button class="btn btn-primary">See More</button></a></center>
                         </div>
                     </div>
                 </div>
@@ -367,11 +422,11 @@
                             <h4>MASHKI</h4>
                         </div>
                         <div class="panel-body">
-                            <img src="cat.jpg" style="height: 330px; width: 340px">
+                            <img src="cat.jpg" style="height: 330px !important; width: 350px !important">
                             <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Mashki is a 2 year old cat who gets cranky without her beauty sleep! She also enjoys to chase yarn, and eat gourmet salmon!</p>
                         </div>
                         <div class="panel-footer">
-                            <center><button class="btn btn-primary">SEE MORE</button></center>
+                            <center><button class="btn btn-primary">See More</button></center>
                         </div>
                     </div>
                 </div>
@@ -381,11 +436,11 @@
                             <h4>BAGEL</h4>
                         </div>
                         <div class="panel-body">
-                            <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12234114/Dachshund-On-White-01.jpg" style="height: 330px; width: 350px">
+                            <img src="http://www.allsmalldogbreeds.com/breeds/dachshund-longhaired.jpg" style="height: 330px !important; width: 420px !important">
                             <p style="color: #262626; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Bagel is a 6 year old brown dachshund who is very protective of his bones! Bagel also loves to jog, and gets plenty of exercise.</p>
                         </div>
                         <div class="panel-footer">
-                            <center><button class="btn btn-primary">SEE MORE</button></center>
+                            <center><button class="btn btn-primary">See More</button></center>
                         </div>
                     </div>
                 </div>
@@ -393,9 +448,8 @@
         </div>
         <!--End Adopt-->
         <br>
-        <hr>    
         <!--Other Ways-->
-        <div class="otherGetInvolvedWays" id="otherGetInvolvedWays" style="padding: 73px 0 70px 0">
+        <div class="otherGetInvolvedWays" id="otherGetInvolvedWays" style="padding: 85px 0 70px 0">
             <center>
                 <h2 style="padding-bottom: 20px; font-size: 35px">OTHER WAYS TO GET INVOLVED</h2>
             </center>
@@ -404,7 +458,7 @@
                 <div class="col-lg-6 col-md-6 col-xl-6">
                     <div class="donate" id="donate">
                         <center>
-                            <h2>DONATE</h2>
+                            <h4>DONATE</h4>
                             <h5 style="padding: 0 0 50px 0">Donate to us, so that we con continue to save pets!</h5>
                         </center>
                         <center>
@@ -423,7 +477,7 @@
                         </center>
                         <center>
                             <h4 style="padding: 60px 0 0 0; color: #80bfff">Want to donate a different amount?</h4>
-                            <h4>Simply enter it here</h4>
+                            <h4 style="color: black">Simply enter it here</h4>
                         </center>
                         <div class="userInput wow slideInUp" style="padding: 5px 0 5px 5px">
                             <center>
@@ -432,16 +486,19 @@
                         </div>
                         <div class="payHere wow slideInDown">
                             <center>
-                                <a href="donate_credit_card.html"><button class="btn btn-primary" style="width: 150px; text-align: center">Donate here</button></a>
+                                <a href="donate_credit_card.html"><button class="btn btn-primary" style="width: 150px; text-align: center">Donate Here</button></a>
                             </center>
                         </div>
                     </div>
                 </div>
+                
+                
+                
                 <!--Take Classes-->
                 <div class="col-lg-6 col-md-6">
                     <div class="signUp" id="signUp">
                         <center>
-                            <h2>TAKE CLASSES</h2>
+                            <h4>TAKE CLASSES</h4>
                             <h5>Sign up to participate in classes or workshops to gain meaningful knowledge and experience in pet shelter services!</h5>
                         </center>
                         <center>
@@ -472,28 +529,27 @@
         </div>
         <!--End Donate-->
         
-         <!--Footer & Contact (More Information)-->
+        <!--Footer & Contact (More Information)-->
         <div class="footer" id="footer" style="padding: 35px !important">
             <div class="row">
-                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
+                <div class="col-lg-4 col-md-4 wow slideInUp">
                     <h2>CONTACT US</h2>
                     <center>
                         <form class="donateForm">
-                            <div style="padding: 0 0 10px 0">
+                            <div style="padding: 0 0 10px 0" data-wow-delay="0.05s">
                                 <input style="text-align: center; width: 400px" type="text" name="email" placeholder="E-MAIL">
                             </div>
                             <div style="padding: 0 0 10px 0">
-                                <input style="text-align: center; width: 150px" type="text" name="name" placeholder="NAME">
-                                <input style="text-align: center; width: 150px" type="text" name="phoneNumber" placeholder="PHONE NUMBER"> 
+                                <input style="text-align: center; width: 400px" type="text" name="name" placeholder="FIRST AND LAST NAME">
                             </div>
                             <textarea id="feedback" name="feedback" placeholder="Please write any feedback that you have here..." style="height:200px; width: 400px"></textarea>
                             <div style="padding: 0 0 10px 0">
-                                <a href="#footer"><button onclick="alertFunction()" class="btn btn-primary" style="width: 400px">SUBMIT</button></a>
+                                <button onclick="alertFunction()</a>" class="btn btn-primary" style="width: 400px">SUBMIT</button>
                             </div>
                         </form>
                     </center>
                 </div>
-                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
+                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.05s">
                     <div class="iconsForFooter" style="padding-left: 55px 0 50px 0">
                         <h2>INFORMATION</h2>
                             <p style="padding: 6px 0 3px"><i class="fa fa-home"></i>Po Box 176 New York, NY, 11221</p>
@@ -503,7 +559,7 @@
                             <p style="padding: 6px 0 0px"><i class="fas fa-scroll"></i>Terms and Conditions</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.2s">
+                <div class="col-lg-4 col-md-4 wow slideInUp" data-wow-delay="0.05s">
                     <div class="followUp">
                         <h2>CONNECT WITH US</h2>
                         <div style="padding: 60px 0 5px 0">

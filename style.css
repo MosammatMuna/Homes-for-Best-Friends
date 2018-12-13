@@ -1,25 +1,25 @@
 
 
 .dropdown-content {
-            position: absolute !important;
-            background-color: gray !important;
-        }
-        .dropdown-content a {
-            text-align: center !important;
-            color: white !important;
-            float: none !important;
-            display: block;
-        }
-        .dropdown-content a:hover {
-            color: black !important;
-            background-color: #ff00d7;
-        }
-        #nav  a  {
-            padding-right: 10px !important;
-            padding-left: 10px !important;
-            color: #1a1a1a;
-            text-align: center;
-        }
+    position: absolute !important;
+    background-color: gray !important;
+}
+.dropdown-content a {
+    text-align: center !important;
+    color: white !important;
+    float: none !important;
+    display: block;
+}
+.dropdown-content a:hover {
+    color: black !important;
+    background-color: #ff00d7;
+}
+#nav  a  {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    color: #1a1a1a;
+    text-align: center;
+}
         #nav  a:hover {
             transition: all 300ms ease-in-out !important;
             color: #1a1a1a ;
@@ -69,6 +69,8 @@ h2 {
     border-radius: 0;
     font-family: Montserrat, sans-serif;
     text-align: left;
+    -webkit-box-shadow: 0px 0 5px 0px #888;
+          box-shadow: 0px 0 5px 0px #888;
 }
 #Nav  a  {
     padding-right: 10px !important;
@@ -79,26 +81,28 @@ h2 {
 #Nav  a:hover {
     transition: all 300ms ease-in-out !important;
     color: #1a1a1a ;
-    background-color: #ff00d7 !important;
+    background-color: #82A0BC !important;
+    border-radius: 4px;
 }
 .navbarBigButton  a  {
     padding-right: 10px !important;
     padding-left: 10px !important;
     color: #1a1a1a;
     text-align: center;
+    border-radius: 4px;
 }
 .navbarBigButton  a:hover {
     transition: all 300ms ease-in-out !important;
     color: #1a1a1a ;
-    background-color: #ff00d7 !important;
+    background-color: #82A0BC !important;
 }
     .dropdown-content {
         position: absolute !important;
         background-color: gray !important;
-        width: 220px;
         display: none;
         color: black !important;
         text-align: center !important;
+        border-radius: 4px;
     }
     .dropdown-content a {
         text-align: center !important;
@@ -140,7 +144,7 @@ h2 {
     padding: 5px;
     font-size: 30px;
     border-radius: 50%;
-    background-color: #ff00d7;
+    background-color: #F78A6F;
     color: white;
 }
 .about i:hover {
@@ -208,27 +212,7 @@ h2 {
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 0 0 0 25px;
 }
-.teamPhoto i {
-    display: none;
-    height: 40px;
-    width: 40px;
-    padding: 5px;
-    font-size: 30px;
-    border-radius: 50%;
-    background-color: #ff00d7;
-    color: white;
-}
-.teamPhoto:hover i {
-    display: inherit;
-    padding: 80px !important;
-}
 
-.meetOurTeam i:hover {
-    height: 60px;
-    width: 60px;
-    padding: 15px;
-    background-color: #80bfff;
-}
 .meetOurTeam h4 {
     font-size: 21px;
     color: #ff00d7 !important;
@@ -244,7 +228,6 @@ h2 {
     padding: 80px 0 27px 0;
 }
 .btn {
-    background-color: #ff00d7;
     color: black;
 }
 
@@ -279,8 +262,11 @@ h2 {
 /*SERVICES PANELS*/
 
 .panel {
-    border: 1px solid #ff00d7;
+    border: 1px solid #82A0BC;
     border-radius: 1%;
+}
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2) !important;
 }
 
 .panel-heading {
@@ -335,12 +321,17 @@ h2 {
 .iconsForFooter i {
     height: 40px;
     width: 40px;
-    color: #ff00d7;
+    color: #F78A6F;
     padding: 0 0 15px 0;
+    opacity: .75;
+}
+.iconsForFooter i:hover {
+    opacity: 1;
 }
 .footer .btn {
-    background-color: #ff00d7;
+    background-color: #F78A6F;
     color: black;
+    border-color: transparent !important;
 }
 
 .footer .btn:hover {
@@ -355,10 +346,11 @@ h2 {
     padding: 5px;
     font-size: 30px;
     border-radius: 50%;
-    background-color: #ff00d7;
+    background-color: #F78A6F;
     color: white;
 }
  .followUp i:hover {
+    transition: all 300ms ease-in-out;
     height: 60px;
     width: 60px;
     padding: 15px;
@@ -442,7 +434,9 @@ h2 {
 }	
 
 
-.slideshowImage {
-    border-style: solid !important;
-    border-bottom-width: 
-}
+/*Color Scheme:
+#80BFFF
+#82A0BC
+#F78A6F
+#F78A6F
+*/

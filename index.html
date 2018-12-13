@@ -37,11 +37,6 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="house.png">
     
-    <script>
-        function alertFunction() {
-            alert("Thank you for submitting your feedback to us. We will get back to you within 1 - 3 bussines days.");
-        }
-    </script>
     
     <script>
         window.onload = function () {
@@ -95,20 +90,33 @@ chart.render();
             <div class="collapse navbar-collapse" id="Nav">
                 <ul class="navbar-nav ml-auto">
                     <li>
-                        <div class="dropdown"> 
+                        <div class="dropdown">
                             <a class="nav-link" href="#aboutUs">About Us<i class="fas fa-caret-down"></i></a>
-                            <div class="dropdown-content">
-                                <a class="nav-link" href="#missionStatement">Mission Statement</a>
-                                <a class="nav-link" href="#statistics">Statstics</a>
+                            <div class="dropdown-content" style="width: 220px !important">
+                                <a class="nav-link" href="#about">Mission Statement</a>
+                                <a class="nav-link" href="#statistics">Statistics</a>
                                 <a class="nav-link" href="#services">Our Services</a>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="behindTheScenes.html">Behind The Scenes</a>
+                        <div class="dropdown">
+                            <a class="nav-link" href="behindTheScenes.html">Behind The Scenes<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content" style="width: 220px !important">
+                                <a class="nav-link" href="behindTheScenes.html #meetOurTeam">Our Team</a> 
+                                <a class="nav-link" href="behindTheScenes.html #partners">Our Partners</a> 
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="getInvolved.html">Get Involved</a>
+                        <div class="dropdown">
+                            <a class="nav-link" href="getInvolved.html">Get Involved<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content" style="width: 160px !important">
+                                <a class="nav-link" href="getInvolved.html #volunteer">Volunteer</a>
+                                <a class="nav-link" href="getInvolved.html #adopt">Adopt</a>
+                                <a class="nav-link" href="getInvolved.html #otherGetInvolvedWays">Other Ways</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -137,20 +145,21 @@ chart.render();
         <!--About Us-->
         
         <div class="aboutUs" id="aboutUs" width="100%" style="padding-top: 30px">
+            
             <center>
                 <h2 style="padding-bottom: 0 !important; padding-top: 38px; font-size: 40px">ABOUT US</h2>
                 <h4>Familiarize yourself with our work!</h4>
             </center>
             <!--About-->
             <div class="about" id="about">
+                <h2 style="padding-top: 70px">OUR MISSION STATEMENT</h2>
                 <div class="row">
                     <div class="col-md-12 col-lg-12 wow slideInUp">
                         <div class="missionStatement" id="missionStatement">
-                            <h2 style="padding-top: 70px">OUR MISSION STATEMENT</h2>
                             <center><i class="fas fa-info-circle"></i></center>
                         </div>
                         <div>
-                            <p>These pets that you viewed above were in desperate need of affection and care. Luckily, they were brought into our Home For Best Friends shelter. We, the team at Home For Best Friends, are dedicated to helping vulnerable animals and making sure they are kept in safe, loving homes.</p>
+                            <p>These pets that you viewed above were in desperate need of affection and care. Luckily, they were brought into our Homes For Best Friends shelter. We, the team at Home For Best Friends, are dedicated to helping vulnerable animals and making sure they are kept in safe, loving homes.</p>
                         </div>
                     </div>
                 </div>
@@ -158,7 +167,7 @@ chart.render();
             
             
             <!--Statistics-->
-            <div class="statistics" id="statistics" style="padding: 73px 0 170px 40px">
+            <div class="statistics" id="statistics" style="padding: 90px 0 170px 40px">
                 <center>
                     <h2>STATISTICS</h2>
                     <h4 style="padding: 0 50px 0 50px">With all of the services that shown above that we provide, we are able to save more pets each year. Take a look at our statistics for 2017.</h4>
@@ -174,12 +183,11 @@ chart.render();
         <!--End Stats-->
         <hr>    
         <!--Services-->
-        <div class="services" id="services" style="padding-top: 60px !important; padding-bottom: 190px">
+        <div class="services" id="services" style="padding-top: 80px !important; padding-bottom: 190px">
             <center>
                 <h2 style="padding-top: 10px">OUR SERVICES</h2>
-                <hr width="95%">
             </center>
-            <div class="row" style="padding: 40px">
+            <div class="row" style="padding: 20px">
                 <div class="col-lg-4 col-md-4 col-sm-4 wow zoomInLeft">
                     <div class="animalRescue">
                         <center>
@@ -246,12 +254,11 @@ chart.render();
                                 <input style="text-align: center; width: 400px" type="text" name="email" placeholder="E-MAIL">
                             </div>
                             <div style="padding: 0 0 10px 0">
-                                <input style="text-align: center; width: 150px" type="text" name="name" placeholder="NAME">
-                                <input style="text-align: center; width: 150px" type="text" name="phoneNumber" placeholder="PHONE NUMBER"> 
+                                <input style="text-align: center; width: 400px" type="text" name="name" placeholder="FIRST AND LAST NAME">
                             </div>
                             <textarea id="feedback" name="feedback" placeholder="Please write any feedback that you have here..." style="height:200px; width: 400px"></textarea>
-                            <div style="padding: 0 0 10px 0"></a>
-                                <button onclick="alertFunction()" class="btn btn-primary" style="width: 400px">SUBMIT</button>
+                            <div style="padding: 0 0 10px 0">
+                                <button onclick="alert('Thank you for submitting your feedback to us. We will get back to you within 1 - 3 bussines days.')" class="btn btn-primary" style="width: 400px">SUBMIT</button>
                             </div>
                         </form>
                     </center>

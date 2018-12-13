@@ -38,32 +38,18 @@
         
          <style>
       
-      #nav a  {
-        color: #1a1a1a;
-        text-align: center;
-    }
-    
-      #nav  a:hover {
-        transition: all 300ms ease-in-out;
-        color: #1a1a1a;
-        background-color: #ff00d7;
-    }
+        .navbarBigButton  a:hover {
+            transition: all 300ms ease-in-out !important;
+            font-size: 30.2px !important;
+        }    
       .textForAdoption {
           padding: 80px;
       }
       
-      #Nav a  {
-        color: #1a1a1a;
-        text-align: center;
-    }
-    
-      #Nav  a:hover {
-        transition: all 300ms ease-in-out;
-        color: #1a1a1a;
-        background-color: #ff00d7;
-      }    
+       
       .btn {
-        background-color: #ff00d7;
+          border-color: transparent !important;
+        background-color: #F78A6F;
         color: black;
       }
       
@@ -85,25 +71,45 @@
 <body>
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-            <div id="nav">
+            <div class="navbarBigButton">
             <a class="navbar-brand" href="index.html" style="font-size: 30px">Homes For Best Friends</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-                <div class="collapse navbar-collapse" id="Nav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html #aboutUs">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="behindTheScenes.html">Behind The Scenes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href=" getInvolved.html">Get Involved</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="Nav">
+                <ul class="navbar-nav ml-auto">
+                    <li>
+                        <div class="dropdown">
+                            <a class="nav-link" href="index.html #aboutUs">About Us<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content" style="width: 220px !important">
+                                <a class="nav-link" href="index.html #missionStatement">Mission Statement</a>
+                                <a class="nav-link" href="index.html #statistics">Statistics</a>
+                                <a class="nav-link" href="index.html #services">Our Services</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" href="behindTheScenes.html">Behind The Scenes<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content" style="width: 220px !important">
+                                <a class="nav-link" href="behindTheScenes.html #meetOurTeam">Our Team</a> 
+                                <a class="nav-link" href="behindTheScenes.html #partners">Our Partners</a> 
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" href="getInvolved.html">Get Involved<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content" style="width: 160px !important">
+                                <a class="nav-link" href="getInvolved.html #volunteer">Volunteer</a>
+                                <a class="nav-link" href="getInvolved.html #adopt">Adopt</a>
+                                <a class="nav-link" href="getInvolved.html #otherGetInvolvedWays">Other Ways</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <!--End Navbar-->
         
